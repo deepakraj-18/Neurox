@@ -10,6 +10,10 @@ import UserExperience from './Compound/Services/UserExperience'
 import ProductTesting from './Compound/Services/ProductTesting'
 import Neuropackaging from './Compound/Services/Neuropackaging'
 import NeuroInfoDevelopment from './Compound/Services/NeuroInfoDevelopment'
+import EEG from './Compound/Lab/EEG';
+import EMG from './Compound/Lab/EMG';
+import NCV from './Compound/Lab/NCV';
+
 
 export default function Router() {
   return (
@@ -26,8 +30,11 @@ export default function Router() {
     <Route path='/services/neuro-packaging' element={<Neuropackaging/>}></Route>
     <Route path='/services/neuro-info-development' element={<NeuroInfoDevelopment/>}></Route>
     
-    <Route path='/technology' element={<Technology/>}></Route>
-    <Route path='/labs/:query' element={<Lab/>}></Route>
+    <Route path='/technology/:query' element={<Technology/>}></Route>
+    <Route path='/labs' element={<Lab/>}></Route>
+    <Route path='/eeg' element={<EEG/>}></Route>
+    <Route path='/emg' element={<EMG/>}></Route>
+    <Route path='/ncv' element={<NCV/>}></Route>
    </Routes>
    </BrowserRouter>
    </>
