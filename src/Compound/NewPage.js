@@ -1,8 +1,10 @@
 import React from 'react'
 import './Style.css';
 import images from '../assest/arrow.png'
+import { useNavigate } from 'react-router-dom';
 
 const NewPage = () => {
+    const navigate=useNavigate();
     return (
         <div class="NewPage">
             <div class="NewPage_text-1">Lets dive into</div>

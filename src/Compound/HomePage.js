@@ -6,14 +6,16 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Style.css';
 import { Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <div className="home-container">
-        <video autoPlay loop muted className="background-video">
+      <video autoPlay loop muted className="background-video">
         <source src={video} type="video/mp4" />
       </video>
       <div className="neuox-container">
@@ -35,30 +37,30 @@ const HomePage = () => {
             <img src={Logo} alt='Logo' className='neuox-contain-img' />
           </div>
           <div className='neuox-contain-2'>
-          <div className="tabs">
-          <div className="tab">Services</div>
-          <div className="tab">Product</div>
-            <div className="tab">Technology</div>
-            <div className="tab">Research</div>
-            <div className="tab">Case Studies</div>
-            <div className="tab">Events/Resources</div>
-            <div className="tab">FAQs</div>
-            <div className="tab">About Us</div>
-            <div className="tab">Contact</div>
-            <div className="tab"><SearchIcon sx={{color:"white"}}/></div>
-          </div>
+            <div className="tabs">
+              <div className="tab" onClick={() => navigate("services")}>Services</div>
+              <div className="tab" onClick={() => navigate("")}>Product</div>
+              <div className="tab" onClick={() => navigate("")}>Technology</div>
+              <div className="tab" onClick={() => navigate("")}>Research</div>
+              <div className="tab" onClick={() => navigate("")}>Case Studies</div>
+              <div className="tab" onClick={() => navigate("")}>Events/Resources</div>
+              <div className="tab" onClick={() => navigate("")}>FAQs</div>
+              <div className="tab" onClick={() => navigate("")}>About Us</div>
+              <div className="tab" onClick={() => navigate("")}>Contact</div>
+              <div className="tab"><SearchIcon sx={{ color: "white" }} /></div>
+            </div>
           </div>
         </div>
       </div>
       <div className='appearing-box-1'>
-      <div className="welcome-text">
-            {/* <div className="welcome-text-1">NEUROX IS DIAGNOSTIC AND PREDICTIVE</div> */}
-            <Typography variant='h6' sx={{m:2,fontSize:"18px",marginTop:"40px"}}>NEUROX IS DIAGNOSTIC AND PREDICTIVE</Typography>
-            <Typography variant='h4' sx={{fontSize:"60px",m:2}}>Welcome to</Typography>
-            <Typography className="welcome-text-3" variant='h4' sx={{fontSize:"60px",mx:2,color:"#007bff"}}>NeuroX</Typography>
-            <Typography className='welcome-text-4' data-aos="fade-right" data-aos-delay="600" sx={{m:2,color:"#007bff"}}>________</Typography>
-            {/* <div className="welcome-text-2">Welcome to </div> */}
-            {/* <div className="welcome-text-3" id="neurox-text">
+        <div className="welcome-text">
+          {/* <div className="welcome-text-1">NEUROX IS DIAGNOSTIC AND PREDICTIVE</div> */}
+          <Typography variant='h6' sx={{ m: 2, fontSize: "18px", marginTop: "40px" }}>NEUROX IS DIAGNOSTIC AND PREDICTIVE</Typography>
+          <Typography variant='h4' sx={{ fontSize: "60px", m: 2 }}>Welcome to</Typography>
+          <Typography className="welcome-text-3" variant='h4' sx={{ fontSize: "60px", mx: 2, color: "#007bff" }}>NeuroX</Typography>
+          <Typography className='welcome-text-4' data-aos="fade-right" data-aos-delay="600" sx={{ m: 2, color: "#007bff" }}>________</Typography>
+          {/* <div className="welcome-text-2">Welcome to </div> */}
+          {/* <div className="welcome-text-3" id="neurox-text">
               <span>N</span>
               <span>e</span>
               <span>u</span>
@@ -66,17 +68,17 @@ const HomePage = () => {
               <span>o</span>
               <span>X</span>
             </div> */}
-            {/* <div className="welcome-text-4" data-aos="fade-right" data-aos-delay="600" >________</div> */}
-            <Typography className="welcome-text-5" sx={{m:2}}>
-              <p>
-                We help businesses optimize their 
-                marketing efforts, enhance brand 
-                recognition, and drive revenue 
-                growth by tapping into the power 
-                of the human mind
-              </p>
-            </Typography>
-          </div>
+          {/* <div className="welcome-text-4" data-aos="fade-right" data-aos-delay="600" >________</div> */}
+          <Typography className="welcome-text-5" sx={{ m: 2 }}>
+            <p>
+              We help businesses optimize their
+              marketing efforts, enhance brand
+              recognition, and drive revenue
+              growth by tapping into the power
+              of the human mind
+            </p>
+          </Typography>
+        </div>
 
       </div>
     </div>

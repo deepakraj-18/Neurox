@@ -27,6 +27,8 @@ import { Facebook, Twitter, LinkedIn, Instagram } from '@mui/icons-material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { useSearchParams } from 'react-router-dom';
+import Neurodesign from './Services/Neurodesign';
 // import Navbar from './Navbar';
 
 const ToolbarContainer = styled(Toolbar)({
@@ -116,6 +118,8 @@ const FooterContainer = styled('footer')(({ theme }) => ({
   });
 
 const Service = () => {
+  let [searchParams, setSearchParams] = useSearchParams();
+  console.log(searchParams.get("query"));
   const classes = useStyles();
 
   return (
