@@ -13,7 +13,8 @@ import NeuroInfoDevelopment from './Compound/Services/NeuroInfoDevelopment'
 import EEG from './Compound/Lab/EEG';
 import EMG from './Compound/Lab/EMG';
 import NCV from './Compound/Lab/NCV';
-
+import Contact from './Compound/Contact';
+import About from './Compound/About';
 
 export default function Router() {
   return (
@@ -35,6 +36,8 @@ export default function Router() {
     <Route path='/eeg' element={<EEG/>}></Route>
     <Route path='/emg' element={<EMG/>}></Route>
     <Route path='/ncv' element={<NCV/>}></Route>
+    <Route path='/contact' element={<Contact/>}></Route>
+    <Route path='/about' element={<About/>}></Route>
    </Routes>
    </BrowserRouter>
    </>
