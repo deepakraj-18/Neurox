@@ -1,6 +1,7 @@
 import React from 'react';
 import { TextField, Button, Radio, RadioGroup, FormControl, FormControlLabel, FormLabel, Container, Box, Typography, Grid, Paper, IconButton } from '@mui/material';
 import { Phone, Email, LocationOn, Facebook, Twitter, LinkedIn, Instagram } from '@mui/icons-material';
+import FooterPage from './FooterPage';
 
 const Contact = () => {
   return (
@@ -126,6 +127,7 @@ const Contact = () => {
                 </Typography>
             </Box>
       </Container>
+      <FooterPage />
     </>
   );
 };

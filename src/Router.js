@@ -45,6 +45,7 @@ export default function Router() {
     <Route path='/eeg' element={<EEG/>}></Route>
     <Route path='/emg' element={<EMG/>}></Route>
     <Route path='/ncv' element={<NCV/>}></Route>
+    
     <Route path='/contact' element={<Contact/>}></Route>
     <Route path='/about' element={<About/>}></Route>
    </Routes>
