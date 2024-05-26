@@ -8,8 +8,8 @@ import NeuroPackaging from '../../assest/neuropackage.png';
 import userExperience from '../../assest/userexperience.png';
 import productTesting from '../../assest/ProductTesting.png';
 import NeuroInfotech from '../../assest/neuroinfotech.png';
-import NavbarTwo from '../NavbarTwo';
 import { useNavigate } from 'react-router-dom';
+import NavbarTwo from '../NavbarTwo';
 import FooterPage from '../FooterPage';
 
 const StyledGif = styled('img')({
@@ -45,13 +45,12 @@ const cardsData = [
     },
 ];
 
-export default function Neurodesign() {
-    
+export default function FacialCoding() {
     const navigate=useNavigate();
 
-    return (
-      <>
-        <NavbarTwo />
+  return (
+    <>
+      <NavbarTwo />
             <Container>
                 <Box sx={{ textAlign: 'center', my: 14 }}>
                     <Typography variant="h2" gutterBottom>
@@ -166,8 +165,7 @@ export default function Neurodesign() {
                     <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
                 </Box>
             </Container>
-            <FooterPage />
-
+            <FooterPage/>
         </>
     )
 }

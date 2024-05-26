@@ -165,7 +165,7 @@ class MyCarousel extends Component {
 
   render() {
     return (
-      <div style={{ width: "70%", height: "500px", margin: "0 auto" }} >
+      <div style={{ width: "70%", height: "70%", margin: "15% auto" }} >
         <Carousel
           slides={this.slides}
           goToSlide={this.state.goToSlide}

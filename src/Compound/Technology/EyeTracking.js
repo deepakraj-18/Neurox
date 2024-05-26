@@ -45,43 +45,54 @@ const cardsData = [
     },
 ];
 
+export default function EyeTracking() {
+    const navigate=useNavigate();
 
-export default function ProductTesting() {
-    const navigate = useNavigate();
-
-    return (
-        <>
-            <NavbarTwo />
+  return (
+    <>
+      <NavbarTwo />
             <Container>
                 <Box sx={{ textAlign: 'center', my: 14 }}>
                     <Typography variant="h2" gutterBottom>
-                        Product testing
+                        Neurodesign
                     </Typography>
                     <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "22px" }}>
-                        To boost your business with neurobrand testing, define objectives, select appropriate tools, and design stimuli. Recruit a diverse sample, conduct testing, and analyze data for insights. Refine branding strategies, integrate with traditional research, and ensure ethical practices throughout the process.
+                        To help user experience specialists, creatives, advertisers, designers, and marketers—or anyone who creates images for work—optimize and boost the engagement and appeal of their design or product, neuroscientists have uncovered a great deal about how the brain's visual systems function.
                     </Typography>
                 </Box>
                 <StyledGif src={servicesVideo} alt="Neurodesign GIF" />
                 <Box sx={{ my: 14 }}>
                     <Typography variant='h4' textAlign="center">
-                        Why Neurobrand testing:
+                        How Does Neurodesign Operate?
                     </Typography>
                     <Typography
                         variant="body1"
                         paragraph
                         sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
                     >
-                        Leveraging neurobrand testing effectively for your business involves several key steps. Firstly, it's crucial to define clear objectives for the testing process, whether you aim to optimize current branding elements, understand consumer perceptions, or evaluate new campaigns. Next, select the appropriate neuroscientific tools and methodologies that align with your goals and budget. Once you've chosen your tools, design stimuli such as logos, packaging designs, or advertisements to test. Then, recruit a diverse sample of participants that reflects your target audience. Conduct the testing in controlled conditions while measuring subconscious responses. Analyze the data collected, focusing on emotional response, attention levels, and memory activation. Use these insights to refine branding elements and marketing strategies. It's essential to integrate neurobrand testing with traditional research methods for a comprehensive understanding of consumer behavior. Finally, ensure ethical practices throughout the testing process, including obtaining informed consent and protecting participant privacy. By following these steps, you can harness neurobrand testing to enhance your branding strategies and better connect with your audience on a subconscious level.
+                        The majority of neurodesign principles centre on the brain's visual systems.
+                        How we take in and analyse visual information when making judgements.
+                        Understanding the brain's hierarchical information processing system is
+                        helpful for designers since it may influence how they approach their work
+                        overall. Visual design features must be optimised to maximise visual salience
+                        and emotional effect because users and consumers of visual design (such as those
+                        in advertising) are frequently inundated with information and have short attention
+                        spans. If they are not, they are unlikely to have the desired effect on the user or
+                        consumer.
                     </Typography>
                     <Typography
                         variant="body1"
                         paragraph
                         sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
                     >
-                        Neurobrand testing offers a revolutionary approach to understanding consumer behavior by delving into the subconscious mind. Unlike traditional market research methods, neurobrand testing taps into neurological responses to uncover deep-seated emotions, preferences, and perceptions that influence purchasing decisions. By employing sophisticated techniques such as EEG, fMRI, and eye-tracking, businesses gain unparalleled insights into how their branding elements resonate with consumers on a subconscious level. This nuanced understanding allows for the optimization of branding strategies, ensuring that every aspect—from logos to advertisements—resonates profoundly with the target audience. Ultimately, neurobrand testing empowers businesses to create more engaging, memorable, and impactful brand experiences that drive customer loyalty and business success.
+                        Neurodesign operates at the intersection of neuroscience and design, focusing on creating visually appealing and cognitively effective solutions based on how the human brain perceives and processes information. By understanding the neurological and psychological principles that drive attention, memory, and emotion, neurodesigners craft experiences that resonate with users on a deeper level. This involves analyzing brain activity using advanced techniques like functional magnetic resonance imaging (fMRI), electroencephalography (EEG), and eye-tracking to identify what elements capture attention and evoke emotion.
                     </Typography>
-                    <Typography variant='h4' textAlign="center">
-                        Estimating the impact and potency of your idea.
+                    <Typography
+                        variant="body1"
+                        paragraph
+                        sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
+                    >
+                        Neurodesign operates at the intersection of neuroscience and design, focusing on creating visually appealing and cognitively effective solutions based on how the human brain perceives and processes information. By understanding the neurological and psychological principles that drive attention, memory, and emotion, neurodesigners craft experiences that resonate with users on a deeper level. This involves analyzing brain activity using advanced techniques like functional magnetic resonance imaging (fMRI), electroencephalography (EEG), and eye-tracking to identify what elements capture attention and evoke emotion.
                     </Typography>
                     <StyledImage src={Doc} alt="Services" />
                     <Typography
@@ -89,33 +100,30 @@ export default function ProductTesting() {
                         paragraph
                         sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
                     >
-                        Assessing the potential impact and potency of your idea involves a comprehensive analysis of various factors to gauge its viability and effectiveness. This evaluation encompasses market research to understand demand and competition, an examination of the uniqueness and scalability of the idea, and a consideration of potential obstacles and challenges that may arise. Seeking feedback from stakeholders and experts can provide valuable insights for refinement and validation. By meticulously analyzing these elements, you can gain a clearer understanding of the potential impact and potency of your idea, helping to inform strategic decisions and maximize its success.
+                        The majority of neurodesign principles centre on the brain's visual systems.
+                        How we take in and analyse visual information when making judgements.
+                        Understanding the brain's hierarchical information processing system is
+                        helpful for designers since it may influence how they approach their work
+                        overall. Visual design features must be optimised to maximise visual salience
+                        and emotional effect because users and consumers of visual design (such as those
+                        in advertising) are frequently inundated with information and have short attention
+                        spans. If they are not, they are unlikely to have the desired effect on the user or
+                        consumer.
                     </Typography>
-                    <StyledImage src={Doc} alt="Services" />
                     <Typography
                         variant="body1"
                         paragraph
                         sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
                     >
-                        Assessing the potential impact and potency of your idea involves a comprehensive analysis of various factors to gauge its viability and effectiveness. This evaluation encompasses market research to understand demand and competition, an examination of the uniqueness and scalability of the idea, and a consideration of potential obstacles and challenges that may arise. Seeking feedback from stakeholders and experts can provide valuable insights for refinement and validation. By meticulously analyzing these elements, you can gain a clearer understanding of the potential impact and potency of your idea, helping to inform strategic decisions and maximize its success.
+                        Neurodesign operates at the intersection of neuroscience and design, focusing on creating visually appealing and cognitively effective solutions based on how the human brain perceives and processes information. By understanding the neurological and psychological principles that drive attention, memory, and emotion, neurodesigners craft experiences that resonate with users on a deeper level. This involves analyzing brain activity using advanced techniques like functional magnetic resonance imaging (fMRI), electroencephalography (EEG), and eye-tracking to identify what elements capture attention and evoke emotion.
                     </Typography>
-                    <StyledImage src={Doc} alt="Services" />
                     <Typography
                         variant="body1"
                         paragraph
                         sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
                     >
-                        Assessing the potential impact and potency of your idea involves a comprehensive analysis of various factors to gauge its viability and effectiveness. This evaluation encompasses market research to understand demand and competition, an examination of the uniqueness and scalability of the idea, and a consideration of potential obstacles and challenges that may arise. Seeking feedback from stakeholders and experts can provide valuable insights for refinement and validation. By meticulously analyzing these elements, you can gain a clearer understanding of the potential impact and potency of your idea, helping to inform strategic decisions and maximize its success.
+                        Neurodesign operates at the intersection of neuroscience and design, focusing on creating visually appealing and cognitively effective solutions based on how the human brain perceives and processes information. By understanding the neurological and psychological principles that drive attention, memory, and emotion, neurodesigners craft experiences that resonate with users on a deeper level. This involves analyzing brain activity using advanced techniques like functional magnetic resonance imaging (fMRI), electroencephalography (EEG), and eye-tracking to identify what elements capture attention and evoke emotion.
                     </Typography>
-                    <StyledImage src={Doc} alt="Services" />
-                    <Typography
-                        variant="body1"
-                        paragraph
-                        sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
-                    >
-                        Assessing the potential impact and potency of your idea involves a comprehensive analysis of various factors to gauge its viability and effectiveness. This evaluation encompasses market research to understand demand and competition, an examination of the uniqueness and scalability of the idea, and a consideration of potential obstacles and challenges that may arise. Seeking feedback from stakeholders and experts can provide valuable insights for refinement and validation. By meticulously analyzing these elements, you can gain a clearer understanding of the potential impact and potency of your idea, helping to inform strategic decisions and maximize its success.
-                    </Typography>
-
                 </Box>
                 <Box sx={{ flexGrow: 1, padding: 2 }}>
                     <Grid container spacing={2} justifyContent="space-evenly">
@@ -158,6 +166,7 @@ export default function ProductTesting() {
                 </Box>
             </Container>
             <FooterPage />
+
         </>
     )
 }

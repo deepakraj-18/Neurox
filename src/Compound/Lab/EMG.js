@@ -5,6 +5,9 @@ import servicesImage from '../../assest/EMG.png';
 import EMGCard from '../../assest/EMGCard.png';
 import NCVCard from '../../assest/NCVCard.png';
 import EMGImg from '../../assest/EMGImg.png';
+import NavbarTwo from '../NavbarTwo';
+import { useNavigate } from 'react-router-dom';
+import FooterPage from '../FooterPage';
 
 
 const StyledImage = styled('img')({
@@ -25,8 +28,11 @@ const cardsData = [
 ];
 
 export default function EEG() {
+    const navigate=useNavigate();
+
     return (
-        <>
+      <>
+        <NavbarTwo />
             <Container>
                 <Box sx={{ textAlign: 'center', my: 14 }}>
                     <Typography variant="h2" gutterBottom>
@@ -107,6 +113,7 @@ It's a system built on classifying the entire body in addition to expression. Ou
                     <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
                 </Box>
             </Container>
+            <FooterPage />
 
         </>
     )

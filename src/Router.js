@@ -13,6 +13,10 @@ import NeuroInfoDevelopment from './Compound/Services/NeuroInfoDevelopment'
 import EEG from './Compound/Lab/EEG';
 import EMG from './Compound/Lab/EMG';
 import NCV from './Compound/Lab/NCV';
+import TechnologyEEG from './Compound/Technology/EEG';
+import FacialCoding from './Compound/Technology/FacialCoding'
+import EyeTracking from './Compound/Technology/EyeTracking'
+
 
 
 export default function Router() {
@@ -30,7 +34,11 @@ export default function Router() {
     <Route path='/services/neuro-packaging' element={<Neuropackaging/>}></Route>
     <Route path='/services/neuro-info-development' element={<NeuroInfoDevelopment/>}></Route>
     
-    <Route path='/technology/:query' element={<Technology/>}></Route>
+    <Route path='/technology' element={<Technology/>}></Route>
+    <Route path='/technology/technology-eeg' element={<TechnologyEEG/>}></Route>
+    <Route path='/technology/technology-facial-coding' element={<FacialCoding/>}></Route>
+    <Route path='/technology/technology-eye-tracking' element={<EyeTracking/>}></Route>
+
     <Route path='/labs' element={<Lab/>}></Route>
     <Route path='/eeg' element={<EEG/>}></Route>
     <Route path='/emg' element={<EMG/>}></Route>

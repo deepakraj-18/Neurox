@@ -8,6 +8,9 @@ import NeuroPackaging from '../../assest/neuropackage.png';
 import userExperience from '../../assest/userexperience.png';
 import productTesting from '../../assest/ProductTesting.png';
 import NeuroInfotech from '../../assest/neuroinfotech.png';
+import NavbarTwo from '../NavbarTwo';
+import { useNavigate } from 'react-router-dom';
+import FooterPage from '../FooterPage';
 
 const StyledGif = styled('img')({
     width: '100%',
@@ -45,12 +48,15 @@ const cardsData = [
 
 
 export default function UserExperience() {
+    const navigate = useNavigate();
+
     return (
         <>
+            <NavbarTwo />
             <Container>
                 <Box sx={{ textAlign: 'center', my: 14 }}>
                     <Typography variant="h2" gutterBottom>
-                    User Experience
+                        User Experience
                     </Typography>
                     <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "22px" }}>
                         To boost your business with neurobrand testing, define objectives, select appropriate tools, and design stimuli. Recruit a diverse sample, conduct testing, and analyze data for insights. Refine branding strategies, integrate with traditional research, and ensure ethical practices throughout the process.
@@ -152,6 +158,7 @@ export default function UserExperience() {
                     <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
                 </Box>
             </Container>
+            <FooterPage />
 
         </>
     )

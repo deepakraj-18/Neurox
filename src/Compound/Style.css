@@ -992,7 +992,7 @@
   position: relative;
   display: flex;
   background-color: #007bff;
-  /* Blue background color */
+  /* #09a4fc background color */
   color: #fff;
   /* White text color */
   font-size: 16px;
@@ -1515,23 +1515,54 @@ video {
   color: #07a3fc;
 }
 
-.Grid-item:hover .Design-text-3 {
+/* .Grid-item:hover .Design-text-3 {
   color: #07a3fc;
-}
+} */
 
-.Grid-item:hover svg {
+.Grid-item svg {
   font-size: 35px;
   fill: #007bff;
 }
+
+.Grid-item:hover svg {
+  display: none;
+}
+
+.Grid-item .icon {
+  display: none;
+}
+
+.Grid-item:hover .icon {
+  display: block;
+  border-radius: 50%;
+  background: #09a4fc;
+  fill: #fff;
+}
+
 
 .NewPage_section:hover .section-box {
   border-color: #09a4fc;
   color: #09a4fc;
 }
+.NewPage_section:hover  {
+  height: 25%;
+}
 
 .NewPage_section:hover .section-text-2 {
   color: #09a4fc;
   font-size: 3.5vw;
+}
+
+.NewPage_section .section-icon {
+  border: 2px solid #09a4fc;
+  border-radius: 50%;
+  border-color: #09a4fc;
+
+}
+
+.NewPage_section:hover .section-icon {
+  transform: rotate(315deg);
+
 }
 
 .NewPage_section .section-box .section-text-1 {
@@ -1545,9 +1576,14 @@ video {
   display: none;
 }
 
-.NewPage_section:hover  .section-text-3 {
+.NewPage_section:hover .section-text-3 {
   display: block;
 }
-.NewPage_section:hover  .section-icon {
+
+.NewPage_section:hover .section-icon {
   rotate: -45;
+}
+
+.MuiPaper-root{
+  box-shadow: none;
 }

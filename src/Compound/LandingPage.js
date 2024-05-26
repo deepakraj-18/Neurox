@@ -18,7 +18,7 @@ import Service from './Services/Service';
 export default function LandingPage() {
     return (
         <>
-            {/* <Navbar /> */}
+            
             <HomePage />
             <AboutUs />
             <Range />

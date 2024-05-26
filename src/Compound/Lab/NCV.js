@@ -6,6 +6,9 @@ import EMGCard from '../../assest/EMGCard.png';
 import NCVCard from '../../assest/NCVCard.png';
 import EMGImg from '../../assest/EMGImg.png';
 import Metrics from '../../assest/Metris.png';
+import NavbarTwo from '../NavbarTwo';
+import { useNavigate } from 'react-router-dom';
+import FooterPage from '../FooterPage';
 
 
 const StyledImage = styled('img')({
@@ -22,44 +25,47 @@ const cardsData = [
         image: NCVCard,
         title: 'NCV',
     },
-    
+
 ];
 
 export default function EEG() {
+    const navigate = useNavigate();
+
     return (
         <>
+            <NavbarTwo />
             <Container>
                 <Box sx={{ textAlign: 'center', my: 14 }}>
                     <Typography variant="h2" gutterBottom>
-                    NCV
+                        NCV
                     </Typography>
                     <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "22px" }}>
-                    Today, eye trackers study attention in various research situations, including internet, advertising,  and customer experience.
-                       </Typography>
+                        Today, eye trackers study attention in various research situations, including internet, advertising,  and customer experience.
+                    </Typography>
                 </Box>
-                <StyledImage sx={{my:4}} src={servicesImage} alt="Services" />
+                <StyledImage sx={{ my: 4 }} src={servicesImage} alt="Services" />
                 <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "22px" }}>
-                The eye tracking method is frequently used in neuromarketing studies because it is highly  integratable with other methods like facial coding, galvanic response of the skin (GSR) detection,  electroencephalography (EEG), electrocardiography (ECG), plethysmography (PPG), and others.  Additionally, it enables interpretation of all the data from other methods in the context of what the  subject of the study is seeing at any given time.                       </Typography>
+                    The eye tracking method is frequently used in neuromarketing studies because it is highly  integratable with other methods like facial coding, galvanic response of the skin (GSR) detection,  electroencephalography (EEG), electrocardiography (ECG), plethysmography (PPG), and others.  Additionally, it enables interpretation of all the data from other methods in the context of what the  subject of the study is seeing at any given time.                       </Typography>
                 <Box sx={{ my: 14 }}>
-                <Typography variant='h4' textAlign="center">
-                Metrics and Data for Eye Tracking - Neuromarketing
-                                    </Typography>
-                                    <StyledImage sx={{my:4}} src={Metrics} alt="Services" />
+                    <Typography variant='h4' textAlign="center">
+                        Metrics and Data for Eye Tracking - Neuromarketing
+                    </Typography>
+                    <StyledImage sx={{ my: 4 }} src={Metrics} alt="Services" />
                     <Typography
                         variant="body1"
                         paragraph
                         sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
                     >
-One can extract signs pertaining to fixations, saccades, pupil diameter, and ocular blinks by  analysing the eye tracking recordings.               </Typography>
-<Typography
+                        One can extract signs pertaining to fixations, saccades, pupil diameter, and ocular blinks by  analysing the eye tracking recordings.               </Typography>
+                    <Typography
                         variant="body1"
                         paragraph
                         sx={{ color: 'gray', fontSize: '22px', textAlign: "left", my: 6 }}
                     >
-It's a system built on classifying the entire body in addition to expression. Our  expressions never lie, thus using the FACS (Facial Action Coding System) is an  unfailing way to analyse emotional responses.Numerous neuromarketing studies  have shown that each (possible) client's first centre of attention is their face. We can  infer details and information from the face that can be used into marketing plans.This  method is frequently employed to comprehend people's emotional states, such as  those elicited by watching an advertisement.
-</Typography>
-                   
-                    </Box>
+                        It's a system built on classifying the entire body in addition to expression. Our  expressions never lie, thus using the FACS (Facial Action Coding System) is an  unfailing way to analyse emotional responses.Numerous neuromarketing studies  have shown that each (possible) client's first centre of attention is their face. We can  infer details and information from the face that can be used into marketing plans.This  method is frequently employed to comprehend people's emotional states, such as  those elicited by watching an advertisement.
+                    </Typography>
+
+                </Box>
                 <Box sx={{ flexGrow: 1, padding: 2 }}>
                     <Grid container spacing={2} justifyContent="space-evenly">
                         {cardsData.map((card, index) => (
@@ -100,7 +106,7 @@ It's a system built on classifying the entire body in addition to expression. Ou
                     <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
                 </Box>
             </Container>
-
+            <FooterPage />
         </>
     )
 }

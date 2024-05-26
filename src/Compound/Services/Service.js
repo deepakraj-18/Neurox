@@ -27,8 +27,12 @@ import { Facebook, Twitter, LinkedIn, Instagram } from '@mui/icons-material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import { useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import Neurodesign from './Neurodesign';
+import Navbar from '../Navbar';
+import NavbarTwo from '../NavbarTwo';
+import PartnersPageTwo from '../PartnersPageTwo';
+import FooterPage from '../FooterPage';
 // import Navbar from './Navbar';
 
 const ToolbarContainer = styled(Toolbar)({
@@ -132,25 +136,11 @@ const Service = () => {
   let [searchParams, setSearchParams] = useSearchParams();
   console.log(searchParams.get("query"));
   const classes = useStyles();
+  const navigate = useNavigate();
 
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <AppBar position="static" color="default">
-        <ToolbarContainer>
-          <Box sx={{ flexGrow: 1 }}>
-            <img src={logo} alt="NeuroX Logo" style={{ height: '50px' }} />
-          </Box>
-          <NavLinks>
-            {['Services', 'Technology', 'Lab', 'Case Studies', 'Blog', 'Events/Resources', 'FAQs', 'About Us', 'Contact'].map((text) => (
-              <Button key={text} color="inherit">{text}</Button>
-            ))}
-          </NavLinks>
-          <IconButton edge="end" color="inherit" aria-label="search">
-            <SearchIcon />
-          </IconButton>
-        </ToolbarContainer>
-      </AppBar> */}
+      <NavbarTwo />
       <Container>
         <Box sx={{ textAlign: 'center', my: 20 }}>
           <Typography variant="h2" gutterBottom>
@@ -193,13 +183,14 @@ const Service = () => {
         </Typography>
         <StyledMap src={Map} alt="Services" />
       </Box>
-      <div className={classes.Partners_page_brands}>
+      {/* <div className={classes.Partners_page_brands}>
         <div className={classes.Partners_page_brands_container}>
           {images.map((image, index) => (
             <img key={index} src={image} className={classes.Partners_page_img} alt={`Image ${index}`} />
           ))}
         </div>
-      </div>
+      </div> */}
+      <PartnersPageTwo/>
       <Box sx={{ textAlign: 'center', my: 20, mx: 20 }}>
         <Typography variant="h3">
           Ready to work with us?
@@ -208,7 +199,7 @@ const Service = () => {
           Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging, Ad Campaigns, and Brand Recognition
         </Typography>
       </Box>
-      <FooterContainer>
+      {/* <FooterContainer>
         <Container maxWidth="lg">
           <Grid container spacing={5}>
             <Grid item xs={12} sm={4}>
@@ -261,7 +252,8 @@ const Service = () => {
             </Grid>
           </Grid>
         </Container>
-      </FooterContainer>
+      </FooterContainer> */}
+      <FooterPage />
     </>
   );
 };

@@ -8,6 +8,8 @@ import NeuroPackaging from '../../assest/neuropackage.png';
 import userExperience from '../../assest/userexperience.png';
 import productTesting from '../../assest/ProductTesting.png';
 import NeuroInfotech from '../../assest/neuroinfotech.png';
+import NavbarTwo from '../NavbarTwo';
+import FooterPage from '../FooterPage';
 
 const StyledGif = styled('img')({
     width: '100%',
@@ -43,8 +45,11 @@ const cardsData = [
 ];
 
 export default function Neuropackaging() {
-  return (
-   <>
+    const navigate=navigate();
+
+    return (
+      <>
+        <NavbarTwo />
     <Container>
             <Box sx={{ textAlign: 'center', my: 14 }}>
                 <Typography variant="h2" gutterBottom>
@@ -158,7 +163,8 @@ export default function Neuropackaging() {
             <Box sx={{ textAlign: 'center', my: 8 }}>
                 <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
             </Box>
-        </Container>f
+        </Container>
+        <FooterPage />
    </>
   )
 }
