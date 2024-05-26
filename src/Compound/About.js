@@ -10,6 +10,7 @@ import { styled } from '@mui/material/styles';
 import Person from '../assest/Person.png';
 import LinkedInIcon from '../assest/linkedin.png';
 import FooterPage from './FooterPage';
+import NavbarTwo from './NavbarTwo';
 
 const boxData = [
     {
@@ -125,6 +126,7 @@ const TeamImage = styled('img')({
 const About = () => {
     return (
         <>
+        <NavbarTwo/>
             <Container maxWidth="md">
                 <Box sx={{ textAlign: 'center', my: 4, mx: 8 }}>
                     <Typography variant="h2">
