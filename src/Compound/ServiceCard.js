@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, Typography, Box, IconButton, Grid } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { styled } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
@@ -30,9 +31,10 @@ const ImageContainer = styled(Box)({
   },
 });
 
-const ServiceCard = ({ title, description, imageUrl }) => {
+const ServiceCard = ({ title, description, imageUrl,link }) => {
+  const navigate=useNavigate();
   return (
-    <StyledCard>
+    <StyledCard onClick={()=>navigate(link)}>
       <Grid container alignItems="center">
         <Grid item xs={10}>
           <Box display="flex" alignItems="center">

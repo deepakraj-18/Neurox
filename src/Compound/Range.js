@@ -39,7 +39,7 @@ const Range = () => {
                             </div>
                         </div>
 
-                        <div class="Grid-item"onClick={() => navigate("services/product-testing")}>
+                        <div class="Grid-item"onClick={() => navigate("product-testing")}>
                             <div class="Design-text-1">NEUROPACKAGING</div>
                             <div class="Design-text-2">Neuropackaging studies how the consumer's brain is impacted by your packaging design using  EEG. NeuroPackaging provides 100% objective results so that your packing is as successful as  feasible.</div>
                             <div class="Design-text-3">
@@ -58,7 +58,7 @@ const Range = () => {
                             </div>
                         </div>
 
-                        <div class="Grid-item"onClick={() => navigate("services/product-testing")}>
+                        <div class="Grid-item"onClick={() => navigate("/product-testing")}>
                             <div class="Design-text-1">PRODUCT TESTING</div>
                             <div class="Design-text-2">At NeuroX, we merge traditional organoleptic testing with advanced scientific tools like biometric response interviews (BRI), EEGs, and face coding for comprehensive product evaluations.</div>
                             <div class="Design-text-3">

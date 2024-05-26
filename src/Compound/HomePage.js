@@ -40,7 +40,7 @@ const HomePage = () => {
             <div className="tabs">
               <div className="tab" onClick={() => navigate("services")}>Services</div>
               <div className="tab" onClick={() => navigate("")}>Product</div>
-              <div className="tab" onClick={() => navigate("")}>Technology</div>
+              <div className="tab" onClick={() => navigate("technology")}>Technology</div>
               <div className="tab" onClick={() => navigate("")}>Research</div>
               <div className="tab" onClick={() => navigate("")}>Case Studies</div>
               <div className="tab" onClick={() => navigate("")}>Events/Resources</div>

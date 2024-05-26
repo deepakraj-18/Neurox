@@ -5,30 +5,30 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled } from '@mui/material/styles';
-import logo from '../assest/Neuro x final png 4.png'; 
+import logo from '../../assest/Neuro x final png 4.png';
 import { Container, Grid, Link, Typography, Box } from '@mui/material';
-import servicesVideo from '../data/AN ANALYSIS OF NEURONS.mp4';
-import Map from '../assest/map.png';
-import ServiceCard from './ServiceCard';
-import neurodesignImage from '../assest/Neuro design.png'; 
-import neurobrandImage from '../assest/Neuro design.png'; 
-import neuropackagingImage from '../assest/Neuro design.png'; 
-import userExperienceImage from '../assest/Neuro design.png'; 
-import productTestingImage from '../assest/Neuro design.png';
-import amazonImage from '../assest/Amazon.png';
-import brandImage from '../assest/Brands.png';
-import pradaImage from '../assest/Prada.png';
-import bookImage from '../assest/Book.png';
-import oriflameImage from '../assest/Oriflame.png';
-import wardahImage from '../assest/Wardah.png';
-import primevideoImage from '../assest/Primevideo.png';
+import servicesVideo from '../../data/AN ANALYSIS OF NEURONS.mp4';
+import Map from '../../assest/map.png';
+import ServiceCard from '../ServiceCard';
+import neurodesignImage from '../../assest/Neuro design.png';
+import neurobrandImage from '../../assest/Neuro design.png';
+import neuropackagingImage from '../../assest/Neuro design.png';
+import userExperienceImage from '../../assest/Neuro design.png';
+import productTestingImage from '../../assest/Neuro design.png';
+import amazonImage from '../../assest/Amazon.png';
+import brandImage from '../../assest/Brands.png';
+import pradaImage from '../../assest/Prada.png';
+import bookImage from '../../assest/Book.png';
+import oriflameImage from '../../assest/Oriflame.png';
+import wardahImage from '../../assest/Wardah.png';
+import primevideoImage from '../../assest/Primevideo.png';
 import { makeStyles } from '@mui/styles';
 import { Facebook, Twitter, LinkedIn, Instagram } from '@mui/icons-material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { useSearchParams } from 'react-router-dom';
-import Neurodesign from './Services/Neurodesign';
+import Neurodesign from './Neurodesign';
 // import Navbar from './Navbar';
 
 const ToolbarContainer = styled(Toolbar)({
@@ -55,26 +55,37 @@ const services = [
     title: 'Neurodesign',
     description: 'Neurodesign uses neuroscience to create more engaging visual content by analyzing how people perceive and react to design elements.',
     imageUrl: neurodesignImage,
+    link: 'neurodesign'
   },
   {
     title: 'Neurobrand Testing',
     description: 'Neurotesting enables precise assessment of packaging\'s competitive performance and forecasts impact.',
     imageUrl: neurobrandImage,
+    link: "neurobrand-testing"
   },
   {
     title: 'Neuropackaging',
     description: 'Neuropackaging uses EEG to objectively measure consumer brain responses to optimize packaging design.',
     imageUrl: neuropackagingImage,
+    link: "neuro-packaging"
   },
   {
     title: 'User Experience',
     description: 'Benefits of UX and Usability analysis using biometric and eye tracking tools include measuring participants\' impulsive visual patterns.',
     imageUrl: userExperienceImage,
+    link: "services/user-experience"
   },
   {
     title: 'Product Testing',
     description: 'NeuroX tests products using organoleptic techniques combined with biometric tools like BRI, EEGs, and face coding.',
     imageUrl: productTestingImage,
+    link: "product-testing"
+  },
+  {
+    title: 'Neuro- info development',
+    description: 'NeuroX tests products using organoleptic techniques combined with biometric tools like BRI, EEGs, and face coding.',
+    imageUrl: productTestingImage,
+    link: "product-testing"
   },
 ];
 
@@ -106,16 +117,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const FooterContainer = styled('footer')(({ theme }) => ({
-    backgroundColor: '#000',
-    color: '#fff',
-    padding: theme.spacing(4, 0),
-  }));
-  
-  const SocialIconsContainer = styled('div')({
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '16px',
-  });
+  backgroundColor: '#000',
+  color: '#fff',
+  padding: theme.spacing(4, 0),
+}));
+
+const SocialIconsContainer = styled('div')({
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '16px',
+});
 
 const Service = () => {
   let [searchParams, setSearchParams] = useSearchParams();
@@ -124,7 +135,7 @@ const Service = () => {
 
   return (
     <>
-    {/* <Navbar /> */}
+      {/* <Navbar /> */}
       {/* <AppBar position="static" color="default">
         <ToolbarContainer>
           <Box sx={{ flexGrow: 1 }}>
@@ -155,8 +166,8 @@ const Service = () => {
         <StyledVideo autoPlay loop muted>
           <source src={servicesVideo} type="video/mp4" />
           Your browser does not support the video tag.
-        </StyledVideo>      
-        </Container>
+        </StyledVideo>
+      </Container>
       <Container>
         <Box sx={{ my: 20 }}>
           {services.map((service, index) => (
@@ -165,6 +176,7 @@ const Service = () => {
               title={service.title}
               description={service.description}
               imageUrl={service.imageUrl}
+              link={service.link}
             />
           ))}
         </Box>
@@ -177,7 +189,7 @@ const Service = () => {
           specimen <span style={{ color: "blue" }}> book. It has survived not only five centuries, but also</span>
         </Typography>
         <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "18px", marginTop: "100px" }}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
         </Typography>
         <StyledMap src={Map} alt="Services" />
       </Box>
@@ -193,63 +205,63 @@ const Service = () => {
           Ready to work with us?
         </Typography>
         <Typography variant="h6" sx={{ color: "gray", fontSize: "20px", marginTop: "100px" }}>
-          Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging, Ad Campaigns, and Brand Recognition        
+          Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging, Ad Campaigns, and Brand Recognition
         </Typography>
       </Box>
       <FooterContainer>
-      <Container maxWidth="lg">
-        <Grid container spacing={5}>
-          <Grid item xs={12} sm={4}>
-            <Box mb={2}>
-              <img src={logo} alt="NeuroX Logo" style={{ height: '50px' }} />
-            </Box>
-            <Typography variant="body1" sx={{color:"#CFCFCF"}}>
-              NeuroX is revolutionizing the way businesses understand consumer behavior by merging cutting-edge neuroscience with marketing strategies. Our team of experts utilizes state-of-the-art technologies such as EEG, Facial Coding, and Eye Tracking to uncover deep insights into consumer preferences, emotions, and decision-making processes. With our own state-of-the-art lab based in London and a team of passionate professionals.
-            </Typography>
-            <SocialIconsContainer sx={{marginRight:"210px"}}>
-              <IconButton href="#" color="inherit">
-                <Facebook />
-              </IconButton>
-              <IconButton href="#" color="inherit">
-                <Twitter />
-              </IconButton>
-              <IconButton href="#" color="inherit">
-                <LinkedIn />
-              </IconButton>
-              <IconButton href="#" color="inherit">
-                <Instagram />
-              </IconButton>
-            </SocialIconsContainer>
+        <Container maxWidth="lg">
+          <Grid container spacing={5}>
+            <Grid item xs={12} sm={4}>
+              <Box mb={2}>
+                <img src={logo} alt="NeuroX Logo" style={{ height: '50px' }} />
+              </Box>
+              <Typography variant="body1" sx={{ color: "#CFCFCF" }}>
+                NeuroX is revolutionizing the way businesses understand consumer behavior by merging cutting-edge neuroscience with marketing strategies. Our team of experts utilizes state-of-the-art technologies such as EEG, Facial Coding, and Eye Tracking to uncover deep insights into consumer preferences, emotions, and decision-making processes. With our own state-of-the-art lab based in London and a team of passionate professionals.
+              </Typography>
+              <SocialIconsContainer sx={{ marginRight: "210px" }}>
+                <IconButton href="#" color="inherit">
+                  <Facebook />
+                </IconButton>
+                <IconButton href="#" color="inherit">
+                  <Twitter />
+                </IconButton>
+                <IconButton href="#" color="inherit">
+                  <LinkedIn />
+                </IconButton>
+                <IconButton href="#" color="inherit">
+                  <Instagram />
+                </IconButton>
+              </SocialIconsContainer>
+            </Grid>
+            <Grid item xs={12} sm={2}>
+              <Typography variant="h6">Navigation</Typography>
+              <ul style={{ listStyleType: 'none', padding: 0 }}>
+                <li><Link href="#" color="inherit" underline="none">Service</Link></li>
+                <li><Link href="#" color="inherit" underline="none">Technology</Link></li>
+                <li><Link href="#" color="inherit" underline="none">Case Study</Link></li>
+                <li><Link href="#" color="inherit" underline="none">Resource</Link></li>
+                <li><Link href="#" color="inherit" underline="none">Contact</Link></li>
+              </ul>
+            </Grid>
+            <Grid item xs={12} sm={2}>
+              <Typography variant="h6">Licence</Typography>
+              <ul style={{ listStyleType: 'none', padding: 0 }}>
+                <li><Link href="#" color="inherit" underline="none">Privacy Policy</Link></li>
+                <li><Link href="#" color="inherit" underline="none">Copyright</Link></li>
+                <li><Link href="#" color="inherit" underline="none">Email Address</Link></li>
+              </ul>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Typography variant="h6">Contact</Typography>
+              <Box sx={{ marginTop: "10px" }}>
+                <Typography variant="body2"><PhoneIcon /> +44 7564 522241</Typography>
+                <Typography variant="body2"><EmailIcon /> contact@neurox.co.uk</Typography>
+                <Typography variant="body2"><LocationOnIcon /> 20 Wenlock Road, London, N1 7GU</Typography>
+              </Box>
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={2}>
-            <Typography variant="h6">Navigation</Typography>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              <li><Link href="#" color="inherit" underline="none">Service</Link></li>
-              <li><Link href="#" color="inherit" underline="none">Technology</Link></li>
-              <li><Link href="#" color="inherit" underline="none">Case Study</Link></li>
-              <li><Link href="#" color="inherit" underline="none">Resource</Link></li>
-              <li><Link href="#" color="inherit" underline="none">Contact</Link></li>
-            </ul>
-          </Grid>
-          <Grid item xs={12} sm={2}>
-            <Typography variant="h6">Licence</Typography>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              <li><Link href="#" color="inherit" underline="none">Privacy Policy</Link></li>
-              <li><Link href="#" color="inherit" underline="none">Copyright</Link></li>
-              <li><Link href="#" color="inherit" underline="none">Email Address</Link></li>
-            </ul>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h6">Contact</Typography>
-            <Box sx={{marginTop:"10px"}}>
-            <Typography variant="body2"><PhoneIcon /> +44 7564 522241</Typography>
-            <Typography variant="body2"><EmailIcon /> contact@neurox.co.uk</Typography>
-            <Typography variant="body2"><LocationOnIcon /> 20 Wenlock Road, London, N1 7GU</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </FooterContainer>
+        </Container>
+      </FooterContainer>
     </>
   );
 };

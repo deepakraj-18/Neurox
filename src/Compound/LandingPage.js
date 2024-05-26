@@ -13,7 +13,7 @@ import AboutUs from './AboutUs';
 import Range from './Range';
 import Navbar from './Navbar';
 import NewPage from './NewPage';
-import Service from './Service';
+import Service from './Services/Service';
 
 export default function LandingPage() {
     return (
