@@ -190,15 +190,13 @@ const Service = () => {
           ))}
         </div>
       </div> */}
-      <PartnersPageTwo/>
-      <Box sx={{ textAlign: 'center', my: 20, mx: 20 }}>
-        <Typography variant="h3">
-          Ready to work with us?
-        </Typography>
-        <Typography variant="h6" sx={{ color: "gray", fontSize: "20px", marginTop: "100px" }}>
-          Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging, Ad Campaigns, and Brand Recognition
-        </Typography>
-      </Box>
+      {/* <PartnersPageTwo/> */}
+      <Typography variant='h4' textAlign="center" m={8}>Don't just take their word for it.</Typography>
+            <Typography textAlign="center" mx={44} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
+                Ad Campaigns, and Brand Recognition</Typography>
+            <Box sx={{ textAlign: 'center', my: 8 }}>
+                <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
+            </Box>
       {/* <FooterContainer>
         <Container maxWidth="lg">
           <Grid container spacing={5}>
