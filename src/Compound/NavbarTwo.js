@@ -28,7 +28,7 @@ const NavbarTwo = () => {
       <AppBar position="static" color="default" style={{ boxShadow: "none" }}>
         <ToolbarContainer>
           <Box sx={{ flexGrow: 1 }}>
-            <img src={logo} alt="NeuroX Logo" style={{ height: '50px' }} onClick={() => navigate("/")} />
+            <img src={logo} alt="NeuroX Logo" style={{ height: '50px' }} onClick={() => navigate("/home")} />
           </Box>
           <NavLinks >
             {[{ text: 'Services', link: "/services" }, { text: 'Technology', link: "/technology" }, { text: 'Lab', link: "/labs" }, { text: 'Case Studies', link: "/case" }, { text: 'Blog', link: "/services" }, { text: 'Events/Resources', link: "/event" }, { text: 'FAQs', link: "/faq" }, { text: 'About Us', link: "/about" }, { text: 'Contact', link: "/contact" }].map((item, index) => (

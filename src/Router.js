@@ -21,6 +21,7 @@ import TechnologyEEG from './Compound/Technology/EEG';
 import FacialCoding from './Compound/Technology/FacialCoding'
 import EyeTracking from './Compound/Technology/EyeTracking'
 import FAQ from './Compound/FAQ/FAQ'
+import Intro from './Compound/Intro'
 
 
 
@@ -29,7 +30,8 @@ export default function Router() {
    <>
    <BrowserRouter>
    <Routes>
-    <Route path='/' element={<LandingPage/>}></Route>
+    <Route path='/' element={<Intro/>}></Route>
+    <Route path='/home' element={<LandingPage/>}></Route>
 
     <Route path='/services' element={<Service/>}></Route>
     <Route path='/services/neurodesign' element={<Neurodesign/>}></Route>

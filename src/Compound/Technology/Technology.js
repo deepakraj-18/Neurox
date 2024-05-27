@@ -90,6 +90,19 @@ const services = [
         imageUrl: neuropackagingImage,
         link: "technology-eye-tracking"
     }
+    ,
+    {
+        title: 'GSR',
+        description: "The electrical conductance of the skin can be measured using the galvanic skin response (GSR), which is dependent on the skin's moisture content.",
+        imageUrl: neurobrandImage,
+        link: "technology-facial-coding"
+    },
+    {
+        title: 'HRV',
+        description: "Heart rate variability (HRV) testing measures heartbeat interval variations and is used to assess physiological and emotional responses to marketing stimuli like ads or product designs.",
+        imageUrl: neuropackagingImage,
+        link: "technology-eye-tracking"
+    }
 ];
 
 const images = [amazonImage, brandImage, pradaImage, primevideoImage, bookImage, oriflameImage, wardahImage]; // Add more images as needed
@@ -173,7 +186,7 @@ export default function Technology() {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen <span style={{ color: "blue" }}> book. It has survived not only five centuries, but also</span>
+                    specimen <span style={{ color: "#09a4fc" }}> book. It has survived not only five centuries, but also</span>
                 </Typography>
                 <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "18px", marginTop: "100px" }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
