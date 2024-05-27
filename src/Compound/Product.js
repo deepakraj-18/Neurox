@@ -1,9 +1,9 @@
 import React from 'react';
-import video from '../../data/comingsoon.mp4';
+import video from '../data/comingsoon.mp4';
 import { Typography } from '@mui/material';
-import NavbarTwo from '../NavbarTwo';
+import NavbarTwo from './NavbarTwo';
 
-export default function Blog() {
+export default function Product() {
     return (
         <>
         <NavbarTwo />
@@ -12,7 +12,7 @@ export default function Blog() {
                 <source src={video} type="video/mp4" />
             </video>
             <div className="neuox-container" style={{textAlign:'center'}}>
-            <Typography variant='h1'>BLOG</Typography>
+            <Typography variant='h1'>Product</Typography>
                 <span className="neuox-text">Coming <span style={{color:"#09a4fc"}}>Soon </span></span>
             </div>
         </div>

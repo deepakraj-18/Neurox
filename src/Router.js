@@ -22,6 +22,8 @@ import FacialCoding from './Compound/Technology/FacialCoding'
 import EyeTracking from './Compound/Technology/EyeTracking'
 import FAQ from './Compound/FAQ/FAQ'
 import Intro from './Compound/Intro'
+import Blog from './Compound/Blog/Blog'
+import Product from './Compound/Product'
 
 
 
@@ -34,6 +36,7 @@ export default function Router() {
     <Route path='/home' element={<LandingPage/>}></Route>
 
     <Route path='/services' element={<Service/>}></Route>
+    <Route path='/product' element={<Product/>}></Route>
     <Route path='/services/neurodesign' element={<Neurodesign/>}></Route>
     <Route path='/services/neurobrand-testing' element={<NeurobrandTesting/>}></Route>
     <Route path='/services/user-experience' element={<UserExperience/>}></Route>
@@ -57,6 +60,7 @@ export default function Router() {
     <Route path='/event' element={<Event/>}></Route>
     <Route path='/case' element={<Case/>}></Route>
     <Route path='/faq' element={<FAQ/>}></Route>
+    <Route path='/blog' element={<Blog/>}></Route>
 
    </Routes>
    </BrowserRouter>

@@ -4,12 +4,14 @@ import Joinus_video from '../data/footer.mp4';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Container, Box, Typography, Grid, Avatar } from '@mui/material';
+
 
 const JoinusPage = () => {
   AOS.init({ duration: 1000 });
   
   return (
-    <div className='Joinus_page'>
+    <Box className='Joinus_page'>
       <div className='Joinus_page_video'>
       <video autoPlay loop muted className='Joinus_video' >
             <source src={Joinus_video} type="video/mp4" />
@@ -22,7 +24,7 @@ const JoinusPage = () => {
         </div>
         
       </div>
-    </div>
+    </Box>
   );
 };
 
