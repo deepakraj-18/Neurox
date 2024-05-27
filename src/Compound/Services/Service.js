@@ -1,11 +1,11 @@
 import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
+// import AppBar from '@mui/material/AppBar';
+// import Toolbar from '@mui/material/Toolbar';
+// import Button from '@mui/material/Button';
+// import IconButton from '@mui/material/IconButton';
+// import SearchIcon from '@mui/icons-material/Search';
 import { styled } from '@mui/material/styles';
-import logo from '../../assest/Neuro x final png 4.png';
+// import logo from '../../assest/Neuro x final png 4.png';
 import { Container, Grid, Link, Typography, Box } from '@mui/material';
 import servicesVideo from '../../data/AN ANALYSIS OF NEURONS.mp4';
 import Map from '../../assest/map.png';
@@ -15,34 +15,34 @@ import neurobrandImage from '../../assest/Neuro design.png';
 import neuropackagingImage from '../../assest/Neuro design.png';
 import userExperienceImage from '../../assest/Neuro design.png';
 import productTestingImage from '../../assest/Neuro design.png';
-import amazonImage from '../../assest/Amazon.png';
-import brandImage from '../../assest/Brands.png';
-import pradaImage from '../../assest/Prada.png';
-import bookImage from '../../assest/Book.png';
-import oriflameImage from '../../assest/Oriflame.png';
-import wardahImage from '../../assest/Wardah.png';
-import primevideoImage from '../../assest/Primevideo.png';
+// import amazonImage from '../../assest/Amazon.png';
+// import brandImage from '../../assest/Brands.png';
+// import pradaImage from '../../assest/Prada.png';
+// import bookImage from '../../assest/Book.png';
+// import oriflameImage from '../../assest/Oriflame.png';
+// import wardahImage from '../../assest/Wardah.png';
+// import primevideoImage from '../../assest/Primevideo.png';
 import { makeStyles } from '@mui/styles';
-import { Facebook, Twitter, LinkedIn, Instagram } from '@mui/icons-material';
-import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import { Facebook, Twitter, LinkedIn, Instagram } from '@mui/icons-material';
+// import PhoneIcon from '@mui/icons-material/Phone';
+// import EmailIcon from '@mui/icons-material/Email';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import Neurodesign from './Neurodesign';
-import Navbar from '../Navbar';
+// import Neurodesign from './Neurodesign';
+// import Navbar from '../Navbar';
 import NavbarTwo from '../NavbarTwo';
-import PartnersPageTwo from '../PartnersPageTwo';
+// import PartnersPageTwo from '../PartnersPageTwo';
 import FooterPage from '../FooterPage';
 // import Navbar from './Navbar';
 
-const ToolbarContainer = styled(Toolbar)({
-  justifyContent: 'space-between',
-});
+// const ToolbarContainer = styled(Toolbar)({
+//   justifyContent: 'space-between',
+// });
 
-const NavLinks = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  gap: theme.spacing(3),
-}));
+// const NavLinks = styled(Box)(({ theme }) => ({
+//   display: 'flex',
+//   gap: theme.spacing(3),
+// }));
 
 const StyledVideo = styled('video')({
   width: '100%',
@@ -93,7 +93,7 @@ const services = [
   },
 ];
 
-const images = [amazonImage, brandImage, pradaImage, primevideoImage, bookImage, oriflameImage, wardahImage]; // Add more images as needed
+// const images = [amazonImage, brandImage, pradaImage, primevideoImage, bookImage, oriflameImage, wardahImage]; // Add more images as needed
 
 const useStyles = makeStyles((theme) => ({
   Partners_page_brands: {
@@ -120,17 +120,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const FooterContainer = styled('footer')(({ theme }) => ({
-  backgroundColor: '#000',
-  color: '#fff',
-  padding: theme.spacing(4, 0),
-}));
+// const FooterContainer = styled('footer')(({ theme }) => ({
+//   backgroundColor: '#000',
+//   color: '#fff',
+//   padding: theme.spacing(4, 0),
+// }));
 
-const SocialIconsContainer = styled('div')({
-  display: 'flex',
-  justifyContent: 'center',
-  marginTop: '16px',
-});
+// const SocialIconsContainer = styled('div')({
+//   display: 'flex',
+//   justifyContent: 'center',
+//   marginTop: '16px',
+// });
 
 const Service = () => {
   let [searchParams, setSearchParams] = useSearchParams();

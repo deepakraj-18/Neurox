@@ -44,7 +44,7 @@ const HomePage = () => {
               <div className="tab" onClick={() => navigate("")}>Research</div>
               <div className="tab" onClick={() => navigate("")}>Case Studies</div>
               <div className="tab" onClick={() => navigate("")}>Events/Resources</div>
-              <div className="tab" onClick={() => navigate("")}>FAQs</div>
+              <div className="tab" onClick={() => navigate("faq")}>FAQs</div>
               <div className="tab" onClick={() => navigate("about")}>About Us</div>
               <div className="tab" onClick={() => navigate("contact")}>Contact</div>
               <div className="tab"><SearchIcon sx={{ color: "white" }} /></div>

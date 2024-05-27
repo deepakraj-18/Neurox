@@ -20,6 +20,7 @@ import Case from './Compound/Case/Case';
 import TechnologyEEG from './Compound/Technology/EEG';
 import FacialCoding from './Compound/Technology/FacialCoding'
 import EyeTracking from './Compound/Technology/EyeTracking'
+import FAQ from './Compound/FAQ/FAQ'
 
 
 
@@ -53,6 +54,7 @@ export default function Router() {
 
     <Route path='/event' element={<Event/>}></Route>
     <Route path='/case' element={<Case/>}></Route>
+    <Route path='/faq' element={<FAQ/>}></Route>
 
    </Routes>
    </BrowserRouter>
