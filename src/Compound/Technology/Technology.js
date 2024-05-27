@@ -7,14 +7,14 @@ import SearchIcon from '@mui/icons-material/Search';
 import { styled } from '@mui/material/styles';
 import logo from '../../assest/Neuro x final png 4.png';
 import { Container, Grid, Link, Typography, Box, Card, CardMedia, CardContent } from '@mui/material';
-import servicesVideo from '../../data/AN ANALYSIS OF NEURONS.mp4';
+import servicesVideo from '../../assest/Technology/Technology1.gif';
 import Map from '../../assest/map.png';
 import ServiceCard from '../ServiceCard';
-import neurodesignImage from '../../assest/Neuro design.png';
-import neurobrandImage from '../../assest/Neuro design.png';
-import neuropackagingImage from '../../assest/Neuro design.png';
-import userExperienceImage from '../../assest/Neuro design.png';
-import productTestingImage from '../../assest/Neuro design.png';
+import neurodesignImage from '../../assest/Technology/List1.gif';
+import neurobrandImage from '../../assest/Technology/list2.png';
+import neuropackagingImage from '../../assest/Technology/list3.png';
+import userExperienceImage from '../../assest/Technology/gsr.jpg';
+import productTestingImage from '../../assest/Technology/hrv.jpg';
 import amazonImage from '../../assest/Amazon.png';
 import brandImage from '../../assest/Brands.png';
 import pradaImage from '../../assest/Prada.png';
@@ -94,13 +94,13 @@ const services = [
     {
         title: 'GSR',
         description: "The electrical conductance of the skin can be measured using the galvanic skin response (GSR), which is dependent on the skin's moisture content.",
-        imageUrl: neurobrandImage,
+        imageUrl: userExperienceImage,
         link: "technology-facial-coding"
     },
     {
         title: 'HRV',
         description: "Heart rate variability (HRV) testing measures heartbeat interval variations and is used to assess physiological and emotional responses to marketing stimuli like ads or product designs.",
-        imageUrl: neuropackagingImage,
+        imageUrl: productTestingImage,
         link: "technology-eye-tracking"
     }
 ];
@@ -163,10 +163,8 @@ export default function Technology() {
                         specimen book. It has survived not only five centuries, but also
                     </Typography>
                 </Box>
-                <StyledVideo autoPlay loop muted>
-                    <source src={servicesVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </StyledVideo>
+
+                <StyledGif src={servicesVideo} alt="Neurodesign GIF"></StyledGif>
             </Container>
             <Container>
                 <Box sx={{ my: 20 }}>
