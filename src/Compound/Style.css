@@ -1153,7 +1153,7 @@
   padding: 17px;
   border-radius: 10px;
   bottom: 0%;
-  top: 13%;
+  top: 11%;
 
 }
 
@@ -1161,14 +1161,14 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
 }
 
 .card-text {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom:12px;
   text-align: center;
 }
 
@@ -1181,14 +1181,14 @@
 }
 
 .rating {
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .card_profile_name {
   display: flex;
   justify-content: center;
   color: #007bff;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 /*-------------------------------------------------------Into_Technology_page-------------------------------------------------*/

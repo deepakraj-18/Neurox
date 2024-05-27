@@ -11,12 +11,11 @@ const SolutionPage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // If component is in view, start animation after a delay
             const timeout = setTimeout(() => {
               setAnimateText(true);
             }, 2000);
 
-            return () => clearTimeout(timeout); // Clean up the timeout on unmount
+            return () => clearTimeout(timeout);
           }
         });
       },

@@ -13,7 +13,7 @@ const AboutUs = () => {
 
   return (
     <div className='AboutUs'>
-        <div className='AboutUs-contain'>
+        <div className='AboutUs-contain' style={{margin:"4px"}}>
         <div className='AboutUs-left'>
             <Typography className="AboutUs-left-1" data-aos="fade-right">_____________________________________</Typography>
             <Typography className="AboutUs-left-2" data-aos="fade-right" sx={{fontSize:"38px"}}>

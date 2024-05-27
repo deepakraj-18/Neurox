@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useEffect }from 'react'
 import './Style.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import images from '../assest/arrow.png'
 import { useNavigate } from 'react-router-dom';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 const Range = () => {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 }); 
+      }, []);
+
     return (
-        <div>
-            <div class="Design-con-1">Our range of </div>
-            <div class="Design-con-2">Services</div>
+        <>
+        <div style={{margin:"-30px",marginTop:"190px"}}>
+            <div class="Design-con-1" data-aos="fade-right">Our range of </div>
+            <div class="Design-con-2" data-aos="fade-right">Services</div>
             <div class="Design_page_line aos-animate" data-aos="fade-left"></div>
             <div class="Design">
                 <div class="Design-content">
@@ -85,6 +93,7 @@ const Range = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

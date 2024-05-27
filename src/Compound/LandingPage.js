@@ -27,8 +27,8 @@ export default function LandingPage() {
             {/* <ScrollAnimation/> */}
             {/* <ServicePage /> */}
             <SolutionPage />
-            <TestimonialPage />
-            <PartnersPage />
+            {/* <TestimonialPage /> */}
+            {/* <PartnersPage /> */}
             <JoinusPage />
             <FooterPage />
         </>
