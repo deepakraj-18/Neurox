@@ -31,7 +31,7 @@ const NavbarTwo = () => {
             <img src={logo} alt="NeuroX Logo" style={{ height: '50px' }} onClick={() => navigate("/")} />
           </Box>
           <NavLinks >
-            {[{ text: 'Services', link: "/services" }, { text: 'Technology', link: "/technology" }, { text: 'Lab', link: "/labs" }, { text: 'Case Studies', link: "/services" }, { text: 'Blog', link: "/services" }, { text: 'Events/Resources', link: "/services" }, { text: 'FAQs', link: "/services" }, { text: 'About Us', link: "/about" }, { text: 'Contact', link: "/contact" }].map((item, index) => (
+            {[{ text: 'Services', link: "/services" }, { text: 'Technology', link: "/technology" }, { text: 'Lab', link: "/labs" }, { text: 'Case Studies', link: "/case" }, { text: 'Blog', link: "/services" }, { text: 'Events/Resources', link: "/event" }, { text: 'FAQs', link: "/services" }, { text: 'About Us', link: "/about" }, { text: 'Contact', link: "/contact" }].map((item, index) => (
               <div key={index + 1} style={{ display: "flex", flexDirection: "column" }}>
                 <Button  className='nav-link-active'  key={item.text} color="inherit" onClick={() => navigate(item?.link)} > {item.text}</Button>
                 <hr style={{ width: "50px", height: "0.5px",background:"#09a4fc"}}></hr>

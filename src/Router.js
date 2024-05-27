@@ -15,6 +15,8 @@ import EMG from './Compound/Lab/EMG';
 import NCV from './Compound/Lab/NCV';
 import Contact from './Compound/Contact';
 import About from './Compound/About';
+import Event from './Compound/Event/Event';
+import Case from './Compound/Case/Case';
 import TechnologyEEG from './Compound/Technology/EEG';
 import FacialCoding from './Compound/Technology/FacialCoding'
 import EyeTracking from './Compound/Technology/EyeTracking'
@@ -48,6 +50,10 @@ export default function Router() {
     
     <Route path='/contact' element={<Contact/>}></Route>
     <Route path='/about' element={<About/>}></Route>
+
+    <Route path='/event' element={<Event/>}></Route>
+    <Route path='/case' element={<Case/>}></Route>
+
    </Routes>
    </BrowserRouter>
    </>

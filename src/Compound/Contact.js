@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <NavbarTwo />
-      <Container maxWidth="md">
+      <Container maxWidth="md" sx={{my:18}}>
         <Box sx={{ textAlign: 'center', my: 4 }}>
           <Typography variant="h2">Hi there! Can't find what you need?</Typography>
           <Typography variant="h5" my={2} mx={2}>

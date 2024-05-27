@@ -127,7 +127,7 @@ const About = () => {
     return (
         <>
         <NavbarTwo/>
-            <Container maxWidth="md">
+            <Container maxWidth="md" sx={{my:18}}>
                 <Box sx={{ textAlign: 'center', my: 4, mx: 8 }}>
                     <Typography variant="h2">
                         About our company <span style={{ color: '#07A3FC' }}> NeuroX </span>
