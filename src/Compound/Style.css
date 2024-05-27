@@ -242,7 +242,7 @@
   z-index: 2;
   opacity: 0;
   animation: slideUpBox 0.5s ease forwards;
-  animation-delay: 3s;
+  /* animation-delay: 3s; */
   /* Delay the animation after previous elements disappear */
 }
 
@@ -271,7 +271,7 @@
   background-color: rgba(252, 250, 250, 0.2);
   opacity: 0;
   animation: slideUpBox 0.5s ease forwards;
-  animation-delay: 3s;
+  /* animation-delay: 3s; */
   color: #fff;
 }
 
@@ -325,7 +325,7 @@
   opacity: 0;
   /* Initially hidden */
   animation: fadeInLeft 0.5s ease forwards;
-  animation-delay: 3.5s;
+  animation-delay: 0.5s;
   /* Delay the animation */
 }
 
@@ -1168,7 +1168,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-bottom:12px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
@@ -1545,6 +1545,7 @@ video {
   color: #09a4fc;
 }
 
+
 .NewPage_section:hover {
   height: 25%;
 }
@@ -1557,14 +1558,20 @@ video {
 .NewPage_section .section-icon {
   border: 2px solid #09a4fc;
   border-radius: 50%;
-  border-color: #09a4fc;
 
 }
 
 .NewPage_section:hover .section-icon {
   transform: rotate(315deg);
-
+  border: none;
+  border-radius: 50%;
+  border-radius: 50%;
+  background: #09a4fc;
 }
+.NewPage_section:hover .icon {
+  color: #fff;
+}
+
 
 .NewPage_section .section-box .section-text-1 {
   display: flex;
@@ -1589,9 +1596,10 @@ video {
   box-shadow: none;
 }
 
-.nav-link-active:hover hr{
+.nav-link-active:hover hr {
   visibility: visible;
 }
-.nav-link-active hr  {
+
+.nav-link-active hr {
   visibility: hidden;
 }
