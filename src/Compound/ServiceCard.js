@@ -8,8 +8,8 @@ const StyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  padding: theme.spacing(2),
-  marginBottom: theme.spacing(2),
+  // padding: theme.spacing(2),
+  // marginBottom: theme.spacing(2),
   borderBottom: `1px solid black`,
   borderRadius:0,
   boxShadow: 'none',
@@ -32,9 +32,8 @@ const ImageContainer = styled(Box)({
   display: 'flex',
   alignItems: 'center',
   '& img': {
-    width: '80px',
-    height: '80px',
-    borderRadius: '4px',
+    width: '140px',
+    // borderRadius: '4px',
     visibility: 'hidden',
   },
 });
@@ -59,7 +58,7 @@ const ServiceCard = ({ title, description, imageUrl, link }) => {
                 <img src={imageUrl} alt={title} />
               </ImageContainer>
             </Box>
-            <Box sx={{ ml: 2 }}>
+            <Box sx={{ ml: 2 , marginLeft:'40px'}}>
               <IconButton color="primary" className="icon">
                 <EastRoundedIcon className="icon" />
               </IconButton>

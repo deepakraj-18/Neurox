@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import images from '../assest/arrow.png'
 import { useNavigate } from 'react-router-dom';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import { Container, Box, Typography, Grid, Avatar } from '@mui/material';
 
 const NewPage = () => {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ const NewPage = () => {
     }, []);
 
     return (
-        <div class="NewPage">
+        <Box class="NewPage" my={10}>
             <div class="NewPage_text-1" data-aos="fade-right">Lets dive into</div>
             <div class="NewPage_text-2" data-aos="fade-right">Technology</div>
             <div class="NewPage_line aos-init aos-animate" data-aos="fade-left"></div>
@@ -70,7 +71,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">04</div>
                 </div>
-                <div style={{ height: "max-height", margin: "10px" }}>
+                <div style={{ height: "max-height", margin: "10px", marginLeft: "30px" }}>
                     <div class="section-text-2">GSR</div>
                     <div className='section-text-3'>
                         The electrical conductance of the skin can be measured using the galvanic skin response (GSR), which is dependent on the skin's moisture content.
@@ -85,7 +86,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">05</div>
                 </div>
-                <div style={{ height: "max-height", margin: "10px" }}>
+                <div style={{ height: "max-height", margin: "10px", marginLeft: "30px"}}>
                     <div class="section-text-2">HRV</div>
                     <div className='section-text-3'>
                         Heart rate variability (HRV) testing measures heartbeat interval variations and is used to assess physiological and emotional responses to marketing stimuli like ads or product designs.
@@ -98,7 +99,7 @@ const NewPage = () => {
             </div>
 
 
-        </div>
+        </Box>
     )
 }
 

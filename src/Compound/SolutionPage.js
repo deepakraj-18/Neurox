@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Solution from '../data/Solutions.mp4';
+import { Container, Box, Typography, Grid, Avatar } from '@mui/material';
+  
 import './Style.css';
 
 const SolutionPage = () => {
@@ -34,7 +36,7 @@ const SolutionPage = () => {
   }, []); // Empty dependency array to run effect only once
 
   return (
-    <div className='Solution_page' ref={solutionRef}>
+    <Box className='Solution_page' ref={solutionRef}>
       <video autoPlay loop muted className="background-video_Solution">
         <source src={Solution} alt='Solution'  type="video/mp4" />
       </video>
@@ -49,7 +51,7 @@ const SolutionPage = () => {
           insights to client.
         </div>
       </div>
-    </div>
+    </Box>
   );
 };
 

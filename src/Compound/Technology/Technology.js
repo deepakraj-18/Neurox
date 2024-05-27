@@ -49,7 +49,7 @@ const StyledVideo = styled('video')({
 const StyledGif = styled('img')({
     width: '100%',
     borderRadius: '8px',
-    height: 'auto',
+    height: '100%',
 });
 
 // const StyledMap = styled('img')({
@@ -178,7 +178,7 @@ export default function Technology() {
                         />
                     ))}
                 </Box>
-            </Container>
+                </Container>
             <Box sx={{ textAlign: 'center', my: 20, mx: 20 }}>
                 <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "28px" }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -191,13 +191,13 @@ export default function Technology() {
                 </Typography>
                 {/* <StyledMap src={Map} alt="Services" /> */}
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-evenly', my: 4 }}>
-                <StyledButton variant="contained" sx={{ width: "10%" }}>MEMORY</StyledButton>
-                <StyledButton variant="contained" sx={{ width: "10%" }}>RELEVANCE</StyledButton>
-                <StyledButton variant="contained" sx={{ width: "20%" }}>NERVOUS SYSTEM</StyledButton>
-                <StyledButton variant="contained" sx={{ width: "20%" }}>NEUROIMAGING</StyledButton>
+            <Box sx={{ display: 'flex', justifyContent: 'center', my: 4, }}>
+                <StyledButton variant="contained" sx={{width:"10%"}}>MEMORY</StyledButton>
+                <StyledButton variant="contained" sx={{width:"10%"}}>RELEVANCE</StyledButton>
+                <StyledButton variant="contained" sx={{width:"20%"}}>NERVOUS SYSTEM</StyledButton>
+                <StyledButton variant="contained" sx={{width:"20%"}}>NEUROIMAGING</StyledButton>
             </Box>
-            <Box sx={{ flexGrow: 1, padding: 2 }}>
+            <Box sx={{ flexGrow: 1,mx:14 }}>
                 <Grid container spacing={2} sx={{ height: '100%' }}>
                     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Card sx={{ flexGrow: 1 }}>
@@ -210,10 +210,10 @@ export default function Technology() {
                     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Card sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
                             <CardContent sx={{ flexGrow: 1 }}>
-                                <Typography component="div" fontSize={16} my={2} sx={{ color: "#5F5F5F" }}>
+                                <Typography component="div" fontSize={14} my={2} sx={{ color: "#5F5F5F" }}>
                                     <span style={{ color: '#07A3FC' }}> NeuroX </span> specializes in revolutionizing businesses' marketing strategies by delving into the intricate workings of the human mind. Through a fusion of traditional organoleptic testing techniques and cutting-edge biometric instruments such as biometric response interviews (BRI), electroencephalograms (EEGs), and face coding, we uncover invaluable insights into consumer behavior and perception. By understanding the subconscious triggers that influence decision-making, we empower businesses to tailor their marketing efforts with precision, enhancing brand recognition and driving revenue growth. Our approach taps into the essence of consumer psychology, enabling businesses to create resonant brand experiences that forge lasting connections with their target audience.
                                 </Typography>
-                                <Typography fontSize={14} color="text.secondary" my={2}>
+                                <Typography fontSize={11} color="text.secondary" my={2}>
                                     Organoleptic testing techniques and cutting-edge biometric instruments such as biometric response interviews (BRI), electroencephalograms (EEGs), and face coding, we uncover invaluable insights into consumer behavior and perception. By
                                 </Typography>
                             </CardContent>
