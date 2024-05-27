@@ -24,11 +24,8 @@ const Contact = () => {
               <Typography variant="h4" >Contact Information</Typography>
               <Typography variant="body1" sx={{ color: "#C9C9C9" }}>Say something to start a live chat!</Typography>
               <Box my={10}>
-                <Typography variant="body1" my={2}>
-                  <Phone sx={{ color: "white" }} /> +44 7564 522241
-                </Typography>
                 <Typography variant="body1" my={4}>
-                  <Phone /> +44 7503 672001
+                  <Phone sx={{ color: "white" }} /> +03338809116
                 </Typography>
                 <Typography variant="body1" my={4}>
                   <Email sx={{ color: "white" }} /> contact@neurox.co.uk
@@ -39,16 +36,7 @@ const Contact = () => {
               </Box>
               <Box mt={2} sx={{ display: 'flex', gap: 2 }}>
                 <IconButton color="inherit" sx={{ backgroundColor: "white", borderRadius: "50px", height: "30px", width: "30px" }}>
-                  <Facebook sx={{ color: "black" }} />
-                </IconButton>
-                <IconButton color="inherit" sx={{ backgroundColor: "white", borderRadius: "50px", height: "30px", width: "30px" }}>
-                  <Twitter sx={{ color: "black" }} />
-                </IconButton>
-                <IconButton color="inherit" sx={{ backgroundColor: "white", borderRadius: "50px", height: "30px", width: "30px" }}>
                   <LinkedIn sx={{ color: "black" }} />
-                </IconButton>
-                <IconButton color="inherit" sx={{ backgroundColor: "white", borderRadius: "50px", height: "30px", width: "30px" }}>
-                  <Instagram sx={{ color: "black" }} />
                 </IconButton>
               </Box>
             </Grid>
@@ -112,7 +100,7 @@ const Contact = () => {
               />
               <Grid item xs={12}>
                 <Grid container justifyContent="flex-end">
-                  <Button variant="contained" color="primary">
+                  <Button variant="contained" sx={{backgroundColor:"#07A3FC",color:'white'}}>
                     Send Message
                   </Button>
                 </Grid>
@@ -121,12 +109,12 @@ const Contact = () => {
           </Grid>
         </Paper>
         <Box sx={{ textAlign: 'center', my: 20, mx: 20 }}>
-          <Typography variant="h3">
-            Don’t just take their word for it.
-          </Typography>
-          <Typography variant="h6" sx={{ color: "gray", fontSize: "20px", marginTop: "100px" }}>
-            Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging, Ad Campaigns, and Brand Recognition
-          </Typography>
+        <Typography variant='h4' textAlign="center" m={8}>Don't just take their word for it.</Typography>
+            <Typography fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
+                Ad Campaigns, and Brand Recognition</Typography>
+            <Box sx={{ textAlign: 'center', my: 8 }}>
+                <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
+            </Box>
         </Box>
       </Container>
       <FooterPage />

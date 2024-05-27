@@ -1,11 +1,17 @@
 import React from 'react';
 import NavbarTwo from '../NavbarTwo';
 import FooterPage from '../FooterPage';
-import { Container, Typography, Box, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Container, Typography, Box, Accordion, AccordionSummary, AccordionDetails, IconButton } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import CloseIcon from '@mui/icons-material/Close';
 
 const FAQ = () => {
   const faqItems = Array(8).fill("How Do I Add A New Question & Answer?");
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
 
   return (
     <>
@@ -27,14 +33,25 @@ const FAQ = () => {
         </Box>
         <Box sx={{ maxWidth: "800px", mx: "auto", mb: 4, border: "none" }}>
           {faqItems.map((item, index) => (
-            <Accordion key={index} sx={{ mb: 1, borderTop: "1px solid #ccc", borderBottom: "1px solid #ccc", boxShadow: "none" }}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography>{item}</Typography>
+            <Accordion 
+              key={index} 
+              expanded={expanded === `panel${index}`} 
+              onChange={handleChange(`panel${index}`)} 
+              sx={{ mb: 1, borderTop: "1px solid #ccc", borderBottom: "1px solid #ccc", boxShadow: "none" }}
+            >
+              <AccordionSummary
+                expandIcon={expanded === `panel${index}` ? <CloseIcon /> : <AddIcon />} // Changed here
+                sx={{ '& .MuiAccordionSummary-content': { display: 'flex', justifyContent: 'space-between', alignItems: 'center' } }}
+              >
+                <Typography sx={{ color: expanded === `panel${index}` ? '#07A3FC' : 'inherit' }}>{item}</Typography>
               </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  This is the answer to the question. You can replace this text with the actual answer.
+              <AccordionDetails sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end',marginLeft:"290px" }}>
+                <Typography sx={{color:"#5F5F5F"}}>
+                  In neuromarketing research, event-related potentials (ERPs) have been applied sporadically. Although they are more difficult to explain to nonscientists, some have theorized that this is because they are harder to study and necessitate greater data gathering.
                 </Typography>
+                {/* <IconButton>
+                  <CloseIcon />
+                </IconButton> */}
               </AccordionDetails>
             </Accordion>
           ))}
