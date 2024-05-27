@@ -10,9 +10,9 @@ import { Container, Grid, Link, Typography, Box, Card, CardMedia, CardContent } 
 import LabImage from '../../assest/Lab.png';
 import Map from '../../assest/map.png';
 import ServiceCard from '../ServiceCard';
-import neurodesignImage from '../../assest/Neuro design.png';
-import neurobrandImage from '../../assest/Neuro design.png';
-import neuropackagingImage from '../../assest/Neuro design.png';
+import neurodesignImage from '../../assest/Lab/eeg.png';
+import neurobrandImage from '../../assest/Technology/list2.png';
+import neuropackagingImage from '../../assest/Technology/list3.png';
 import userExperienceImage from '../../assest/Neuro design.png';
 import productTestingImage from '../../assest/Neuro design.png';
 import amazonImage from '../../assest/Amazon.png';

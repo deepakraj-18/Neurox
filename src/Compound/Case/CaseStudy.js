@@ -14,12 +14,17 @@ import bookImage from '../../assest/Book.png';
 import oriflameImage from '../../assest/Oriflame.png';
 import wardahImage from '../../assest/Wardah.png';
 import primevideoImage from '../../assest/Primevideo.png';
-import DocGif from '../../assest/Cases.gif';
+import DocGif from '../../assest/CaseStudy/casestudy1.png';
 import DocSpk from '../../assest/DocSpeak.gif'
 import { makeStyles } from '@mui/styles';
 import { useNavigate } from 'react-router-dom';
 import NavbarTwo from '../NavbarTwo';
 import FooterPage from '../FooterPage';
+import NeuroBrand from '../../assest/neurobrand.png';
+import NeuroPackaging from '../../assest/neuropackage.png';
+import userExperience from '../../assest/userexperience.png';
+import productTesting from '../../assest/ProductTesting.png';
+import NeuroInfotech from '../../assest/neuroinfotech.png';
 
 
 const StyledGif = styled('img')({
@@ -41,6 +46,28 @@ const StyledButton = styled(Button)({
         color: 'white'
     },
 });
+const cardsData = [
+    {
+        image: NeuroBrand,
+        title: 'Brand Name',
+    },
+    {
+        image: NeuroPackaging,
+        title: 'Brand Name',
+    },
+    {
+        image: userExperience,
+        title: 'Brand Name',
+    },
+    {
+        image: productTesting,
+        title: 'Brand Name',
+    },
+    {
+        image: NeuroInfotech,
+        title: 'Brand Name',
+    },
+];
 
 
 const services = [
@@ -91,7 +118,8 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function Case() {
+
+export default function CaseStudy() {
     const navigate = useNavigate();
     const classes = useStyles();
 
@@ -102,19 +130,79 @@ export default function Case() {
             <Container>
                 <Box sx={{ textAlign: 'center', my: 20 }}>
                     <Typography variant="h2" gutterBottom>
-                    Case Studies
+                        Brand Name
                     </Typography>
                     <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "20px" }}>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also
+                        Neuro-Info Development refers to the intersection of neuroscience and information technology, a rapidly evolving field that explores how advancements in neuroscience can inform and enhance developments in information technology, and vice versa.
                     </Typography>
                 </Box>
                 <StyledGif src={DocGif} alt="Neurodesign GIF" />
 
+
             </Container>
             <Container>
+                <Typography
+                    variant="body1"
+                    paragraph
+                    sx={{ color: 'gray', fontSize: '20px', textAlign: "left", my: 6 }}
+                >
+                    The majority of neurodesign principles centre on the brain's visual systems.
+                    How we take in and analyse visual information when making judgements.
+                    Understanding the brain's hierarchical information processing system is
+                    helpful for designers since it may influence how they approach their work
+                    overall. Visual design features must be optimised to maximise visual salience
+                    and emotional effect because users and consumers of visual design (such as those
+                    in advertising) are frequently inundated with information and have short attention
+                    spans. If they are not, they are unlikely to have the desired effect on the user or
+                    consumer.
+                </Typography>
+            </Container>
+            <Container sx={{ display: "flex" }}>
+                <Box sx={{ backgroundColor: "#E6F6FF", mx: 1 }}>
+                    <Typography
+                        variant="body1"
+                        paragraph
+                        sx={{ color: '#07A3FC', fontSize: '24px', textAlign: "center", my: 6 }}
+                    >The Challenge</Typography>
+                    <Typography
+                        variant="body1"
+                        paragraph
+                        sx={{ color: 'gray', fontSize: '20px', textAlign: "left", p: 1 }}
+                    >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                    </Typography>
+                </Box>
+                <Box sx={{ backgroundColor: "#E6F6FF", mx: 1 }}>
+                    <Typography
+                        variant="body1"
+                        paragraph
+                        sx={{ color: '#07A3FC', fontSize: '24px', textAlign: "center", my: 6 }}
+                    >Our Endings</Typography>
+                    <Typography
+                        variant="body1"
+                        paragraph
+                        sx={{ color: 'gray', fontSize: '20px', textAlign: "left", p: 1 }}
+                    >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                    </Typography>
+                </Box>
+                <Box sx={{ backgroundColor: "#E6F6FF", mx: 1 }}>
+                    <Typography
+                        variant="body1"
+                        paragraph
+                        sx={{ color: '#07A3FC', fontSize: '24px', textAlign: "center", my: 6 }}
+                    >Our Challenge</Typography>
+                    <Typography
+                        variant="body1"
+                        paragraph
+                        sx={{ color: 'gray', fontSize: '20px', textAlign: "left", p: 1 }}
+                    >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                    </Typography>
+                </Box>
+
+            </Container>
+            {/* <Container>
                 <Box sx={{ my: 20 }}>
                     {services.map((service, index) => (
                         <ServiceCard
@@ -126,8 +214,8 @@ export default function Case() {
                         />
                     ))}
                 </Box>
-            </Container>
-            <Box sx={{ textAlign: 'center', my: 20, mx: 20 }}>
+            </Container> */}
+            {/* <Box sx={{ textAlign: 'center', my: 20, mx: 20 }}>
                 <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "28px" }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -137,15 +225,15 @@ export default function Case() {
                 <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "18px", marginTop: "100px" }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
                 </Typography>
-                {/* <StyledMap src={Map} alt="Services" /> */}
+                <StyledMap src={Map} alt="Services" /> 
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
-                <StyledButton variant="contained" sx={{width:"10%"}}>MEMORY</StyledButton>
-                <StyledButton variant="contained" sx={{width:"10%"}}>RELEVANCE</StyledButton>
-                <StyledButton variant="contained" sx={{width:"20%"}}>NERVOUS SYSTEM</StyledButton>
-                <StyledButton variant="contained" sx={{width:"20%"}}>NEUROIMAGING</StyledButton>
+                <StyledButton variant="contained" sx={{ width: "10%" }}>MEMORY</StyledButton>
+                <StyledButton variant="contained" sx={{ width: "10%" }}>RELEVANCE</StyledButton>
+                <StyledButton variant="contained" sx={{ width: "20%" }}>NERVOUS SYSTEM</StyledButton>
+                <StyledButton variant="contained" sx={{ width: "20%" }}>NEUROIMAGING</StyledButton>
             </Box>
-            <Box sx={{ flexGrow: 1,mx:14 }}>
+            <Box sx={{ flexGrow: 1, mx: 14 }}>
                 <Grid container spacing={2} sx={{ height: '100%' }}>
                     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Card sx={{ flexGrow: 1 }}>
@@ -168,7 +256,42 @@ export default function Case() {
                         </Card>
                     </Grid>
                 </Grid>
-            </Box>
+            </Box> */}
+            <Container>
+                <Box sx={{ flexGrow: 1, padding: 2 }}>
+                    <Grid container spacing={2} justifyContent="space-evenly">
+                        {cardsData.map((card, index) => (
+                            <Grid item key={index} xs={12} sm={6} md={4} lg={2}>
+                                <Card sx={{ maxWidth: 370, borderRadius: 2, position: 'relative' }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image={card.image}
+                                        alt={card.title}
+                                        sx={{ position: 'relative' }}
+                                    />
+                                    <Box
+                                        sx={{
+                                            position: 'absolute',
+                                            bottom: 0,
+                                            left: 0,
+                                            width: '100%',
+                                            bgcolor: 'rgba(0, 0, 0, 0.6)',
+                                            color: 'white',
+                                            textAlign: 'center',
+                                            py: 1,
+                                        }}
+                                    >
+                                        <Typography variant="body2" component="p">
+                                            {card.title}
+                                        </Typography>
+                                    </Box>
+                                </Card>
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Box>
+            </Container>
             <Typography variant='h4' textAlign="center" m={8}>Don't just take their word for it.</Typography>
             <Typography textAlign="center" mx={44} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
                 Ad Campaigns, and Brand Recognition</Typography>

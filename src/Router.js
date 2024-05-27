@@ -24,6 +24,7 @@ import FAQ from './Compound/FAQ/FAQ'
 import Intro from './Compound/Intro'
 import Blog from './Compound/Blog/Blog'
 import Product from './Compound/Product'
+import CaseStudy from './Compound/Case/CaseStudy'
 
 
 
@@ -59,6 +60,7 @@ export default function Router() {
 
     <Route path='/event' element={<Event/>}></Route>
     <Route path='/case' element={<Case/>}></Route>
+    <Route path='/casestudy' element={<CaseStudy/>}></Route>
     <Route path='/faq' element={<FAQ/>}></Route>
     <Route path='/blog' element={<Blog/>}></Route>
 

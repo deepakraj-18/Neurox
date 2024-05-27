@@ -1076,7 +1076,7 @@
 
 .Footer-text-2 {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   max-width: 50%;
   margin-top: 5%;
 }
@@ -1417,10 +1417,11 @@ video {
 }
 
 .NewPage {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   position: relative;
   width: 100vw;
+  padding: 2% 0%;
 }
 
 .NewPage_text-1,
@@ -1449,7 +1450,7 @@ video {
 }
 
 .NewPage_section {
-  align-items: flex-end;
+  align-items: center;
   color: #333;
   display: flex;
   height: 20%;
@@ -1567,6 +1568,7 @@ video {
   border-radius: 50%;
   background: #09a4fc;
 }
+
 .NewPage_section:hover .icon {
   color: #fff;
 }
@@ -1602,4 +1604,50 @@ video {
 
 .nav-link-active hr {
   visibility: hidden;
+}
+
+.faq-container {
+  min-height: 50px;
+}
+.faq-container:hover .faq-container-text {
+  color: #07A3FC;
+}
+.faq-container:hover .faq-container-text {
+  color: #07A3FC;
+}
+
+.faq-container .faq-container-description {
+  display: none;
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.faq-container:hover .faq-container-description {
+  display: block;
+ 
+}
+
+/* .faq-container .faq-container-closeIcon {
+  display: block;
+  color: #000;
+  border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.faq-container:hover .faq-container-closeIcon {
+  display: none
+} */
+
+
+.faq-container .faq-container-openIcon {
+  display: block;
+  color: #000;
+  border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.faq-container:hover .faq-container-openIcon {
+  color: #000;
+  border: none;
+  rotate: 45deg;
 }
