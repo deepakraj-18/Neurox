@@ -175,10 +175,10 @@ export default function Technology() {
                 {/* <StyledMap src={Map} alt="Services" /> */}
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'space-evenly', my: 4 }}>
-                <StyledButton variant="contained">MEMORY</StyledButton>
-                <StyledButton variant="contained">RELEVANCE</StyledButton>
-                <StyledButton variant="contained">NERVOUS SYSTEM</StyledButton>
-                <StyledButton variant="contained">NEUROIMAGING</StyledButton>
+                <StyledButton variant="contained" sx={{width:"10%"}}>MEMORY</StyledButton>
+                <StyledButton variant="contained" sx={{width:"10%"}}>RELEVANCE</StyledButton>
+                <StyledButton variant="contained" sx={{width:"20%"}}>NERVOUS SYSTEM</StyledButton>
+                <StyledButton variant="contained" sx={{width:"20%"}}>NEUROIMAGING</StyledButton>
             </Box>
             <Box sx={{ flexGrow: 1, padding: 2 }}>
                 <Grid container spacing={2} sx={{ height: '100%' }}>
@@ -210,7 +210,7 @@ export default function Technology() {
             <Box sx={{ textAlign: 'center', my: 8 }}>
                 <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
             </Box>
-            <div className={classes.Partners_page_brands}>
+            {/* <div className={classes.Partners_page_brands}>
                 <div className={classes.Partners_page_brands_container}>
                     {images.map((image, index) => (
                         <img key={index} src={image} className={classes.Partners_page_img} alt={`Image ${index}`} />
@@ -224,8 +224,8 @@ export default function Technology() {
                 <Typography variant="h6" sx={{ color: "gray", fontSize: "20px", marginTop: "100px" }}>
                     Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging, Ad Campaigns, and Brand Recognition
                 </Typography>
-            </Box>
-            <FooterContainer>
+            </Box> */}
+            {/* <FooterContainer>
                 <Container maxWidth="lg">
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
@@ -278,7 +278,7 @@ export default function Technology() {
                         </Grid>
                     </Grid>
                 </Container>
-            </FooterContainer>
+            </FooterContainer> */}
             <FooterPage />
         </>
     )

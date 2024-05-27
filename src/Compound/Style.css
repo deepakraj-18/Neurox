@@ -1076,9 +1076,8 @@
 
 .Footer-text-2 {
   display: flex;
-  justify-content: space-around;
+  justify-content:flex-start;
   max-width: 50%;
-  margin-left: -5%;
   margin-top: 5%;
 }
 

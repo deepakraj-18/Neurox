@@ -29,10 +29,10 @@ const FooterPage = () => {
                         </p>
                     </div>
                     <div className='Footer-text-2'>
-                        <FaFacebookF />
-                        <FaTwitter />
+                        {/* <FaFacebookF/>
+                <FaTwitter /> */}
                         <FaLinkedinIn />
-                        <FaInstagram />
+                        {/* <FaInstagram/> */}
                     </div>
                 </div>
                 <div className='Footer-item-2'>
@@ -59,13 +59,13 @@ const FooterPage = () => {
                             Contact
                         </div>
 
-                        <div className='Footer-text-subheader'><CallIcon className='CallIcon' />+44 7564 522241</div>
+                        <div className='Footer-text-subheader'><CallIcon className='CallIcon' />+03338809116</div>
                         <div className='Footer-text-subheader'><EmailIcon className='EmailIcon' />contact@neurox.co.uk</div>
                         <div className='Footer-text-subheader'><LocationOnIcon className='LocationOnIcon' />20 Wenlock Road, London, N1 7GU</div>
                     </div>
 
                 </div>
-                <div className='Footer-item-3' style={{cursor:"pointer"}}>
+                <div className='Footer-item-3'>
                     <img src={MoreOver} alt='MoreOver' onClick={scrollToBottom} />
                 </div>
             </div>
