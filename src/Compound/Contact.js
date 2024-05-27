@@ -96,7 +96,7 @@ const Contact = () => {
                 <FormLabel component="legend">Select Subject?</FormLabel>
                 <RadioGroup row defaultValue="general">
                   <FormControlLabel value="general" control={<Radio />} label="General Inquiry" />
-                  <FormControlLabel value="seals" control={<Radio />} label="Seals Inquiry" />
+                  <FormControlLabel value="seals" control={<Radio />} label="Sales Inquiry" />
                   <FormControlLabel value="job" control={<Radio />} label="Job Inquiry" />
                 </RadioGroup>
               </FormControl>

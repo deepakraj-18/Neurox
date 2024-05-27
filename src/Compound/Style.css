@@ -983,7 +983,7 @@
 .Joinus_video {
   position: relative;
   width: 90%;
-  height: 72vh;
+  height: 100vh;
   object-fit: cover;
   left: 5%;
 }
@@ -991,7 +991,7 @@
 .joinus_button {
   position: relative;
   display: flex;
-  background-color: #007bff;
+  background-color: #09a4fc;
   /* #09a4fc background color */
   color: #fff;
   /* White text color */
@@ -1432,7 +1432,7 @@ video {
 }
 
 .NewPage_text-1 {
-  margin-top: 2%;
+  margin-top: .5%;
 }
 
 .NewPage_text-2 {

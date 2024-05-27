@@ -58,9 +58,9 @@ const HomePage = () => {
         <div className="welcome-text">
           {/* <div className="welcome-text-1">NEUROX IS DIAGNOSTIC AND PREDICTIVE</div> */}
           <Typography variant='h6' sx={{ m: 2, fontSize: "18px", marginTop: "40px" }}>NEUROX IS DIAGNOSTIC AND PREDICTIVE</Typography>
-          <Typography variant='h4' sx={{ fontSize: "60px", m: 2 }}>Welcome to</Typography>
-          <Typography className="welcome-text-3" variant='h4' sx={{ fontSize: "60px", mx: 2, color: "#007bff" }}>NeuroX</Typography>
-          <Typography className='welcome-text-4' data-aos="fade-right" data-aos-delay="600" sx={{ m: 2, color: "#007bff" }}>________</Typography>
+          <Typography variant='h4' sx={{ fontSize: "60px", m: 1 }}>Welcome to</Typography>
+          <Typography className="welcome-text-3" variant='h4' sx={{ fontSize: "60px", mx: 1, color: "#007bff" }}>NeuroX</Typography>
+          <Typography className='welcome-text-4' data-aos="fade-right" data-aos-delay="600" sx={{ m: 1, color: "#007bff" }}>________</Typography>
           {/* <div className="welcome-text-2">Welcome to </div> */}
           {/* <div className="welcome-text-3" id="neurox-text">
               <span>N</span>
@@ -71,13 +71,9 @@ const HomePage = () => {
               <span>X</span>
             </div> */}
           {/* <div className="welcome-text-4" data-aos="fade-right" data-aos-delay="600" >________</div> */}
-          <Typography className="welcome-text-5" sx={{ m: 2 }}>
+          <Typography className="welcome-text-5" sx={{ m: 0.5 }}>
             <p>
-              We help businesses optimize their
-              marketing efforts, enhance brand
-              recognition, and drive revenue
-              growth by tapping into the power
-              of the human mind
+              NeuroX specializes in neurotech sales for research, neurofeedback, BCIs, and more, empowering innovation and personal development..
             </p>
           </Typography>
         </div>
