@@ -17,6 +17,7 @@ const ToolbarContainer = styled(Toolbar)({
 const NavLinks = styled(Box)(({ theme }) => ({
   display: 'flex',
   gap: theme.spacing(3),
+  
 }));
 
 const NavbarTwo = () => {
@@ -29,9 +30,12 @@ const NavbarTwo = () => {
           <Box sx={{ flexGrow: 1 }}>
             <img src={logo} alt="NeuroX Logo" style={{ height: '50px' }} onClick={() => navigate("/")} />
           </Box>
-          <NavLinks>
-            {[{ text: 'Services', link: "/services" }, { text: 'Technology', link: "/technology" }, { text: 'Lab', link: "/labs" }, { text: 'Case Studies', link: "/services" }, { text: 'Blog', link: "/services" }, { text: 'Events/Resources', link: "/services" }, { text: 'FAQs', link: "/services" }, { text: 'About Us', link: "/services" }, { text: 'Contact', link: "/services" }].map((item) => (
-              <Button key={item.text} color="inherit" onClick={() => navigate(item?.link)} > {item.text}</Button>
+          <NavLinks >
+            {[{ text: 'Services', link: "/services" }, { text: 'Technology', link: "/technology" }, { text: 'Lab', link: "/labs" }, { text: 'Case Studies', link: "/services" }, { text: 'Blog', link: "/services" }, { text: 'Events/Resources', link: "/services" }, { text: 'FAQs', link: "/services" }, { text: 'About Us', link: "/about" }, { text: 'Contact', link: "/contact" }].map((item, index) => (
+              <div key={index + 1} style={{ display: "flex", flexDirection: "column" }}>
+                <Button  className='nav-link-active'  key={item.text} color="inherit" onClick={() => navigate(item?.link)} > {item.text}</Button>
+                <hr style={{ width: "50px", height: "0.5px",background:"#09a4fc"}}></hr>
+              </div>
             ))}
           </NavLinks>
           <IconButton edge="end" color="inherit" aria-label="search">

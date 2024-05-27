@@ -1544,7 +1544,8 @@ video {
   border-color: #09a4fc;
   color: #09a4fc;
 }
-.NewPage_section:hover  {
+
+.NewPage_section:hover {
   height: 25%;
 }
 
@@ -1584,6 +1585,13 @@ video {
   rotate: -45;
 }
 
-.MuiPaper-root{
+.MuiPaper-root {
   box-shadow: none;
+}
+
+.nav-link-active:hover hr{
+  visibility: visible;
+}
+.nav-link-active hr  {
+  visibility: hidden;
 }
