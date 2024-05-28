@@ -15,9 +15,9 @@ const NewPage = () => {
     }, []);
 
     return (
-        <Box class="NewPage" my={10}>
-            <div class="NewPage_text-1" data-aos="fade-right">Lets dive into</div>
-            <div class="NewPage_text-2" data-aos="fade-right">Technology</div>
+        <>       
+         <div style={{textAlign:"center"}}>
+            <div class="NewPage_text-1" data-aos="fade-right" style={{marginLeft:"270px"}}>Lets dive into  <span style={{color: "#07a3fc",}}>Technology</span></div>
             <div class="NewPage_line aos-init aos-animate" data-aos="fade-left"></div>
             <div class="NewPage_section">
                 <div class="section-box">
@@ -97,9 +97,9 @@ const NewPage = () => {
                     <EastRoundedIcon className='icon'></EastRoundedIcon>
                 </div>
             </div>
+            </div>
+        </>
 
-
-        </Box>
     )
 }
 

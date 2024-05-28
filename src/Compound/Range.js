@@ -14,9 +14,8 @@ const Range = () => {
 
     return (
         <>
-        <div style={{margin:"-30px",marginTop:"190px"}}>
-            <div class="Design-con-1" data-aos="fade-right">Our range of </div>
-            <div class="Design-con-2" data-aos="fade-right">Services</div>
+        <div style={{margin:"-30px",marginTop:"150px",textAlign:"center"}}>
+            <div class="Design-con-1" data-aos="fade-right">Our range of <span style={{color: "#07a3fc",marginTop: "-2%"}}>Services</span>  </div>
             <div class="Design_page_line aos-animate" data-aos="fade-left"></div>
             <div class="Design">
                 <div class="Design-content">

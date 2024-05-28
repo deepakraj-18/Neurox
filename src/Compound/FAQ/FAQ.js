@@ -6,6 +6,7 @@ import AddIcon from '@mui/icons-material/Add';
 import CloseIcon from '@mui/icons-material/Close';
 import { styled } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
+import SearchIcon from '@mui/icons-material/Search';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 
 const FAQ = () => {
@@ -132,8 +133,10 @@ const FAQ = () => {
           <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "24px" }}>
             Electroencephalography, or EEG for short, is one of the most widely used methodologies used by neuromarketers today.
           </Typography>
-          <Box sx={{ height: "50px", width: "600px", backgroundColor: "#D9D9D9", borderRadius: "5px", marginTop: "70px", mx: "auto" }} />
         </Box>
+        <Box sx={{ height: "50px", width: "600px", borderBottom:'1px solid black', mx: "auto",marginTop:'-40px' }}>
+          <SearchIcon sx={{ color: "black" }} />
+          </Box>
         <Box sx={{ textAlign: 'center', my: 8 }}>
           <Typography variant="h4">
             Frequently Asked Questions

@@ -18,7 +18,6 @@ import Service from './Services/Service';
 export default function LandingPage() {
     return (
         <>
-            
             <HomePage />
             <AboutUs />
             <Range />

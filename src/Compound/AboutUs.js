@@ -16,10 +16,10 @@ const AboutUs = () => {
         <div className='AboutUs-contain' style={{margin:"4px"}}>
         <div className='AboutUs-left'>
             <Typography className="AboutUs-left-1" data-aos="fade-right">_____________________________________</Typography>
-            <Typography className="AboutUs-left-2" data-aos="fade-right" sx={{fontSize:"38px"}}>
+            <Typography className="AboutUs-left-2" data-aos="fade-right" sx={{fontSize:"34px"}}>
             <span style={{ color: '#07A3FC'}}>NeuroX</span> stands out in the market with its unique blend of neuroscience expertise, high-end technology, and tailored solutions that deliver actionable insights to clients.
         </Typography>
-        <Typography className="AboutUs-left-3" sx={{fontSize:"20px",my:4}} data-aos="fade-right" >
+        <Typography className="AboutUs-left-3" sx={{fontSize:"20px",marginTop:"100px"}} data-aos="fade-right" >
             NeuroX is revolutionizing the way businesses understand consumer behavior by merging cutting-edge neuroscience with marketing strategies. Our team of experts utilizes state-of-the-art technologies such as EEG, Facial Coding , and Eye Tracking to uncover deep insights into consumer preferences, emotions, and decision-making processes.
         </Typography>
         </div>
