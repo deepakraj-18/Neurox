@@ -25,12 +25,12 @@ const NavbarTwo = () => {
 
   return (
     <>
-      <AppBar position="static" color="default" style={{ boxShadow: "none" }}>
-        <ToolbarContainer>
+      <AppBar position="static" color="default"  sx={{ boxShadow: "none",}}>
+        <ToolbarContainer sx={{mx:4}}>
           <Box sx={{ flexGrow: 1 }}>
             <img src={logo} alt="NeuroX Logo" style={{ height: '50px' }} onClick={() => navigate("/home")} />
           </Box>
-          <NavLinks >
+          <NavLinks sx={{display:"flex",gap:"4px"}}>
             {[{ text: 'Services', link: "/services" },{ text: 'Product', link: "/product" }, { text: 'Technology', link: "/technology" }, { text: 'Lab', link: "/labs" }, { text: 'Case Studies', link: "/case" }, { text: 'Blog', link: "/blog" }, { text: 'Events/Resources', link: "/event" }, { text: 'FAQs', link: "/faq" }, { text: 'About Us', link: "/about" }, { text: 'Contact', link: "/contact" }].map((item, index) => (
               <div key={index + 1} style={{ display: "flex", flexDirection: "column" }}>
                 <Button  className='nav-link-active'  key={item.text} color="inherit" onClick={() => navigate(item?.link)} > {item.text}</Button>

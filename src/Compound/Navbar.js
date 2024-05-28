@@ -10,14 +10,14 @@ import { Container, Grid, Link, Typography, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../data/logo.png'
 
-const ToolbarContainer = styled(Toolbar)({
-    justifyContent: 'space-between',
-  });
+// const ToolbarContainer = styled(Toolbar)({
+//     justifyContent: 'space-between',
+//   });
   
-  const NavLinks = styled(Box)(({ theme }) => ({
-    display: 'flex',
-    gap: theme.spacing(3),
-  }));
+//   const NavLinks = styled(Box)(({ theme }) => ({
+//     display: 'flex',
+//     gap: theme.spacing(3),
+//   }));
   
   const Navbar = () => {
     const navigate = useNavigate();

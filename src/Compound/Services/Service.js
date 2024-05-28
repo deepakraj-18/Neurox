@@ -46,7 +46,7 @@ import FooterPage from '../FooterPage';
 
 const StyledVideo = styled('video')({
   width: '100%',
-  borderRadius: '8px',
+  borderRadius: '20px',
 });
 
 const StyledMap = styled('img')({
@@ -142,11 +142,11 @@ const Service = () => {
     <>
       <NavbarTwo />
       <Container>
-        <Box sx={{ textAlign: 'center', my: 20 }}>
+        <Box sx={{ textAlign: 'center', marginTop:"270px" }}>
           <Typography variant="h2" gutterBottom>
             Services
           </Typography>
-          <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "20px" }}>
+          <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "20px",my:6}}>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type
