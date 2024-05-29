@@ -158,12 +158,12 @@ export default function FacialCoding() {
                         ))}
                     </Grid>
                 </Box>
-                <Typography variant='h4' textAlign="center" m={8}>Don't just take their word for it.</Typography>
-                <Typography textAlign="center" mx={20} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
-                    Ad Campaigns, and Brand Recognition</Typography>
-                <Box sx={{ textAlign: 'center', my: 8 }}>
-                    <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
-                </Box>
+                <Typography variant='h4' textAlign="center" my={2} mx={8}>Don't just take their word for it.</Typography>
+            <Typography textAlign="center" mx={44} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
+                Ad Campaigns, and Brand Recognition</Typography>
+            <Box sx={{ textAlign: 'center', my: 2}}>
+                <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
+            </Box>
             </Container>
             <FooterPage/>
         </>
