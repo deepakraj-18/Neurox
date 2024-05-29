@@ -24,6 +24,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
     borderRadius: '50%',
     background: '#09a4fc',
     fill: '#fff',
+    border:"none",
     transform: 'rotate(-15deg)',
   },
 }));
@@ -59,8 +60,8 @@ const ServiceCard = ({ title, description, imageUrl, link }) => {
               </ImageContainer>
             </Box>
             <Box sx={{ ml: 2 , marginLeft:'40px'}}>
-              <IconButton color="primary" className="icon">
-                <EastRoundedIcon className="icon" />
+              <IconButton className="icon">
+                <EastRoundedIcon className="icon" sx={{color:"gray",borderRadius:'50%',border:'1px solid gray'}}/>
               </IconButton>
             </Box>
           </Box>
