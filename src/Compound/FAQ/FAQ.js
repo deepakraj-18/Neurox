@@ -136,6 +136,7 @@ const FAQ = () => {
         </Box>
         <Box sx={{ height: "50px", width: "600px", borderBottom:'1px solid black', mx: "auto",marginTop:'-40px' }}>
           <SearchIcon sx={{ color: "black" }} />
+          {/* <Typography>What are you looking for?</Typography> */}
           </Box>
         <Box sx={{ textAlign: 'center', my: 8 }}>
           <Typography variant="h4">
