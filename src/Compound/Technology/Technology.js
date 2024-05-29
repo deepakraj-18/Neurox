@@ -152,7 +152,7 @@ export default function Technology() {
         <>
             <NavbarTwo />
             <Container>
-                <Box sx={{ textAlign: 'center', my: 20 }}>
+            <Box sx={{ textAlign: 'center', marginTop:"270px" }}>
                     <Typography variant="h2" gutterBottom>
                         Technology
                     </Typography>
@@ -194,14 +194,14 @@ export default function Technology() {
             <Box sx={{ display: 'flex', justifyContent: 'center', my: 4, }}>
                 <StyledButton variant="contained" sx={{width:"10%"}}>MEMORY</StyledButton>
                 <StyledButton variant="contained" sx={{width:"10%"}}>RELEVANCE</StyledButton>
-                <StyledButton variant="contained" sx={{width:"20%"}}>NERVOUS SYSTEM</StyledButton>
-                <StyledButton variant="contained" sx={{width:"20%"}}>NEUROIMAGING</StyledButton>
+                <StyledButton variant="contained" sx={{width:"15%"}}>NERVOUS SYSTEM</StyledButton>
+                <StyledButton variant="contained" sx={{width:"15%"}}>NEUROIMAGING</StyledButton>
             </Box>
-            <Box sx={{ flexGrow: 1,mx:14 }}>
+            <Box sx={{ flexGrow: 1,mx:30 }}>
                 <Grid container spacing={2} sx={{ height: '100%' }}>
                     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Card sx={{ flexGrow: 1 }}>
-                            <CardMedia sx={{ flexGrow: 1 }}>
+                            <CardMedia sx={{ flexGrow: 1 , height:"52vh" }}>
                                 <StyledGif src={DocGif} alt="Neurodesign GIF" />
                             </CardMedia>
                         </Card>
@@ -221,7 +221,7 @@ export default function Technology() {
                     </Grid>
                 </Grid>
             </Box>
-            <Typography variant='h4' textAlign="center" my={2} mx={8}>Don't just take their word for it.</Typography>
+            <Typography variant='h4' textAlign="center" marginTop={12} mx={8}>Don't just take their word for it.</Typography>
             <Typography textAlign="center" mx={44} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
                 Ad Campaigns, and Brand Recognition</Typography>
             <Box sx={{ textAlign: 'center', my: 2}}>
