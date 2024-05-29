@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <NavbarTwo />
-      <Container maxWidth="md" sx={{my:18}}>
+      <Container maxWidth="md" sx={{ my: 18 }}>
         <Box sx={{ textAlign: 'center', my: 4 }}>
           <Typography variant="h2">Hi there! Can't find what you need?</Typography>
           <Typography variant="h5" my={2} mx={2}>
@@ -22,7 +22,7 @@ const Contact = () => {
           <Grid container spacing={0}>
             <Grid item xs={12} sm={6} style={{ background: '#07A3FC', color: 'white', padding: '20px', borderRadius: "10px" }}>
               <Typography variant="h4" >Contact Information</Typography>
-              <Typography variant="body1" sx={{ color: "#C9C9C9" }}>Say something to start a live chat!</Typography>
+              <Typography variant="body1" sx={{ color: "#737373" }}>Say something to start a live chat!</Typography>
               <Box my={10}>
                 <Typography variant="body1" my={4}>
                   <Phone sx={{ color: "white" }} /> +03338809116
@@ -35,13 +35,13 @@ const Contact = () => {
                 </Typography>
               </Box>
               <Box mt={2} sx={{ display: 'flex', gap: 2 }}>
-                <IconButton color="inherit" sx={{ backgroundColor: "white", borderRadius: "50px", height: "30px", width: "30px" }}>
-                  <LinkedIn sx={{ color: "black" }} />
+                <IconButton color="inherit" sx={{ backgroundColor: "white", color: "#07A3FC", borderRadius: "50px", height: "30px", width: "30px" }}>
+                  <LinkedIn sx={{ color: "#07A3FC" }} />
                 </IconButton>
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} style={{ padding: '20px' }}>
-              <Grid container spacing={2}>
+              <Grid container spacing={1}>
                 <Grid item xs={6}>
                   <TextField
                     label="First Name"
@@ -100,7 +100,7 @@ const Contact = () => {
               />
               <Grid item xs={12}>
                 <Grid container justifyContent="flex-end">
-                  <Button variant="contained" sx={{backgroundColor:"#07A3FC",color:'white'}}>
+                  <Button variant="contained" sx={{ backgroundColor: "#07A3FC", color: 'white' }}>
                     Send Message
                   </Button>
                 </Grid>

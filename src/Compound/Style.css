@@ -848,7 +848,6 @@
   /* Adjust as needed to reduce vertical spacing */
 }
 
-
 .Solution_page-text-2 {
   color: white;
   font-size: 6rem;
@@ -857,6 +856,12 @@
 }
 
 .Solution_page-text-2.animated {
+  font-size: 8rem;
+  color: #07A3FC;
+}
+
+.Solution_page-text-2.animated:hover{
+  transition: 0.4s ease all;
   font-size: 8rem;
   font-weight: bolder;
   color: #07A3FC;
@@ -1470,6 +1475,12 @@ video {
   justify-content: space-between;
 }
 
+.section-text{
+  display:flex;
+  align-items:center;
+  gap:6%;
+}
+
 .section-text-2 {
   bottom: 20%;
   font-size: 3vw;
@@ -1521,7 +1532,7 @@ video {
 
 .Grid-item svg {
   font-size: 35px;
-  fill: #007bff;
+  fill: #454545;
 }
 
 .Grid-item:hover svg {
