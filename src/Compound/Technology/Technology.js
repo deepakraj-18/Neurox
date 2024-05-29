@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
@@ -143,16 +143,41 @@ const SocialIconsContainer = styled('div')({
     justifyContent: 'center',
     marginTop: '16px',
 });
+
+// Define the content and videos for each category
+const categoryContent = {
+    memory: {
+        video: 'DocGif',  // Replace with actual video path
+        content: 'Memory content goes here...',
+    },
+    relevance: {
+        video: 'path_to_relevance_video',  // Replace with actual video path
+        content: 'Relevance content goes here...',
+    },
+    nervousSystem: {
+        video: 'path_to_nervous_system_video',  // Replace with actual video path
+        content: 'Nervous System content goes here...',
+    },
+    neuroimaging: {
+        video: 'path_to_neuroimaging_video',  // Replace with actual video path
+        content: 'Neuroimaging content goes here...',
+    },
+};
+
 export default function Technology() {
     const navigate = useNavigate();
     const classes = useStyles();
+    const [selectedCategory, setSelectedCategory] = useState('memory');
 
+    const handleCategoryChange = (category) => {
+        setSelectedCategory(category);
+    };
 
     return (
         <>
             <NavbarTwo />
             <Container>
-            <Box sx={{ textAlign: 'center', marginTop:"270px" }}>
+                <Box sx={{ textAlign: 'center', marginTop: "270px" }}>
                     <Typography variant="h2" gutterBottom>
                         Technology
                     </Typography>
@@ -163,7 +188,6 @@ export default function Technology() {
                         specimen book. It has survived not only five centuries, but also
                     </Typography>
                 </Box>
-
                 <StyledGif src={servicesVideo} alt="Neurodesign GIF"></StyledGif>
             </Container>
             <Container>
@@ -178,7 +202,7 @@ export default function Technology() {
                         />
                     ))}
                 </Box>
-                </Container>
+            </Container>
             <Box sx={{ textAlign: 'center', my: 20, mx: 20 }}>
                 <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "28px" }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -192,17 +216,17 @@ export default function Technology() {
                 {/* <StyledMap src={Map} alt="Services" /> */}
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'center', my: 4, }}>
-                <StyledButton variant="contained" sx={{width:"10%"}}>MEMORY</StyledButton>
-                <StyledButton variant="contained" sx={{width:"10%"}}>RELEVANCE</StyledButton>
-                <StyledButton variant="contained" sx={{width:"15%"}}>NERVOUS SYSTEM</StyledButton>
-                <StyledButton variant="contained" sx={{width:"15%"}}>NEUROIMAGING</StyledButton>
+                <StyledButton variant="contained" sx={{width:"10%"}} onClick={() => handleCategoryChange('memory')}>MEMORY</StyledButton>
+                <StyledButton variant="contained" sx={{width:"10%"}} onClick={() => handleCategoryChange('relevance')}>RELEVANCE</StyledButton>
+                <StyledButton variant="contained" sx={{width:"15%"}} onClick={() => handleCategoryChange('nervousSystem')}>NERVOUS SYSTEM</StyledButton>
+                <StyledButton variant="contained" sx={{width:"15%"}} onClick={() => handleCategoryChange('neuroimaging')}>NEUROIMAGING</StyledButton>
             </Box>
-            <Box sx={{ flexGrow: 1,mx:30 }}>
+            <Box sx={{ flexGrow: 1, mx: 30 }}>
                 <Grid container spacing={2} sx={{ height: '100%' }}>
                     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Card sx={{ flexGrow: 1 }}>
-                            <CardMedia sx={{ flexGrow: 1 , height:"52vh" }}>
-                                <StyledGif src={DocGif} alt="Neurodesign GIF" />
+                            <CardMedia sx={{ flexGrow: 1, height: "52vh" }}>
+                                <StyledGif src={categoryContent[selectedCategory].video} alt="Category GIF" />
                             </CardMedia>
                         </Card>
                     </Grid>
@@ -211,10 +235,7 @@ export default function Technology() {
                         <Card sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
                             <CardContent sx={{ flexGrow: 1 }}>
                                 <Typography component="div" fontSize={14} my={2} sx={{ color: "#5F5F5F" }}>
-                                    <span style={{ color: '#07A3FC' }}> NeuroX </span> specializes in revolutionizing businesses' marketing strategies by delving into the intricate workings of the human mind. Through a fusion of traditional organoleptic testing techniques and cutting-edge biometric instruments such as biometric response interviews (BRI), electroencephalograms (EEGs), and face coding, we uncover invaluable insights into consumer behavior and perception. By understanding the subconscious triggers that influence decision-making, we empower businesses to tailor their marketing efforts with precision, enhancing brand recognition and driving revenue growth. Our approach taps into the essence of consumer psychology, enabling businesses to create resonant brand experiences that forge lasting connections with their target audience.
-                                </Typography>
-                                <Typography fontSize={11} color="text.secondary" my={2}>
-                                    Organoleptic testing techniques and cutting-edge biometric instruments such as biometric response interviews (BRI), electroencephalograms (EEGs), and face coding, we uncover invaluable insights into consumer behavior and perception. By
+                                    {categoryContent[selectedCategory].content}
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -224,7 +245,7 @@ export default function Technology() {
             <Typography variant='h4' textAlign="center" marginTop={12} mx={8}>Don't just take their word for it.</Typography>
             <Typography textAlign="center" mx={44} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
                 Ad Campaigns, and Brand Recognition</Typography>
-            <Box sx={{ textAlign: 'center', my: 2}}>
+            <Box sx={{ textAlign: 'center', my: 2 }}>
                 <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
             </Box>
             {/* <div className={classes.Partners_page_brands}>

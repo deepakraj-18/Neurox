@@ -46,7 +46,8 @@ import FooterPage from '../FooterPage';
 
 const StyledVideo = styled('video')({
   width: '100%',
-  borderRadius: '20px',
+  borderRadius: '40px',
+  height:'80vh'
 });
 
 const StyledMap = styled('img')({
@@ -153,7 +154,7 @@ const Service = () => {
             specimen book. It has survived not only five centuries, but also
           </Typography>
         </Box>
-        <StyledVideo autoPlay loop muted>
+        <StyledVideo autoPlay loop muted sx={{borderRadius:"20px"}}>
           <source src={servicesVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </StyledVideo>
