@@ -17,7 +17,7 @@ const NewPage = () => {
     return (
         <Box class="NewPage" my={10}>
         <Box sx={{mx:28,my:6}}>
-            <div class="NewPage_text-1" data-aos="fade-right">Lets dive into <span >Technology</span></div>
+            <div class="NewPage_text-1" data-aos="fade-right">Lets dive into <span style={{color: "#07a3fc"}} >Technology</span></div>
             </Box>
             <div class="NewPage_line aos-init aos-animate" data-aos="fade-left"></div>
             <div class="NewPage_section">

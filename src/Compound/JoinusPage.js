@@ -17,13 +17,13 @@ const JoinusPage = () => {
             <source src={Joinus_video} type="video/mp4" />
           </video>
       </div>
-      <div className='Joinus_page_text'>
+      <Box className='Joinus_page_text'>
         <div className='joinus_box'>
         <div className='Joinus_text-1'  data-aos="fade-up" >Ready to work with us ?</div>
-        <button className='joinus_button'  data-aos="fade-up" >Get Started<ArrowForwardIcon className='Joinus_arrow'/></button>
+        <button className='joinus_button'  data-aos="fade-up" style={{textAlign:"center"}}>Get Started<ArrowForwardIcon sx={{color:"white"}} className='Joinus_arrow'/></button>
         </div>
         
-      </div>
+      </Box>
     </Box>
   );
 };
