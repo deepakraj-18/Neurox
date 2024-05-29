@@ -976,6 +976,7 @@
 
 .Joinus_page_video {
   background-color: #202020;
+  height: 80vh;
 }
 
 .Joinus_page_text {
@@ -983,7 +984,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .Joinus_video {
@@ -1036,7 +1037,7 @@
   height: 30vh;
   background-color: #202020;
   border: 1px solid #565758;
-  margin-top: 5%;
+  margin-top: 4%;
   justify-content: center;
 }
 
