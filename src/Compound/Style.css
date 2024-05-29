@@ -855,13 +855,13 @@
   /* Add transition for font-size and color */
 }
 
-.Solution_page-text-2.animated {
-  font-size: 8rem;
+.Solution_page-text-2 {
+  font-size: 6rem;
   color: #07A3FC;
 }
 
-.Solution_page-text-2.animated:hover{
-  transition: 0.4s ease all;
+.Solution_page-text-2.animated{
+  transition: .2s ease all;
   font-size: 8rem;
   font-weight: bolder;
   color: #07A3FC;
@@ -1113,7 +1113,7 @@
 }
 
 .Footer-text-header {
-  color: #07A3FC;
+  color: #fff;
   font-size: large;
   font-weight: bolder;
   padding-bottom: 10px;
@@ -1124,7 +1124,7 @@
   color: #9B9B9C;
   margin-top: 20px;
   max-width: 150%;
-  font-size: ;
+  /* font-size: ; */
 }
 
 .MuiSvgIcon-root {
@@ -1555,6 +1555,9 @@ video {
 .NewPage_section:hover .section-box {
   border-color: #09a4fc;
   color: #09a4fc;
+}
+.NewPage_section .section-box {
+ justify-content: center;
 }
 
 

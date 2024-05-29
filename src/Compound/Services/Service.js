@@ -144,7 +144,7 @@ const Service = () => {
       <NavbarTwo />
       <Container>
         <Box sx={{ textAlign: 'center', marginTop:"270px" }}>
-          <Typography variant="h2" gutterBottom>
+          <Typography variant="h2" gutterBottom fontFamily={"Arimo"}>
             Services
           </Typography>
           <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "20px",my:6}}>
