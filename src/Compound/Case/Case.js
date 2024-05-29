@@ -25,7 +25,7 @@ import FooterPage from '../FooterPage';
 const StyledGif = styled('img')({
     width: '100%',
     borderRadius: '8px',
-    height: 'auto',
+    height: '100%',
 });
 
 
@@ -99,11 +99,11 @@ export default function Case() {
         <>
             <NavbarTwo />
             <Container>
-                <Box sx={{ textAlign: 'center', my: 20 }}>
+                <Box sx={{ textAlign: 'center', marginTop:"270px" }}>
                     <Typography variant="h2" gutterBottom>
                     Case Studies
                     </Typography>
-                    <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "20px" }}>
+                    <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "20px",marginBottom:"40px" }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type
@@ -126,30 +126,30 @@ export default function Case() {
                     ))}
                 </Box>
             </Container>
-            <Box sx={{ textAlign: 'center', my: 20, mx: 20 }}>
+            <Box sx={{ textAlign: 'center', marginTop: 14, mx: 20  }}>
                 <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "28px" }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type
                     specimen <span style={{ color: "#09a4fc" }}> book. It has survived not only five centuries, but also</span>
                 </Typography>
-                <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "18px", marginTop: "100px" }}>
+                <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "18px", marginTop: "50px" }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
                 </Typography>
                 {/* <StyledMap src={Map} alt="Services" /> */}
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', my: 4, }}>
                 <StyledButton variant="contained" sx={{width:"10%"}}>MEMORY</StyledButton>
                 <StyledButton variant="contained" sx={{width:"10%"}}>RELEVANCE</StyledButton>
-                <StyledButton variant="contained" sx={{width:"20%"}}>NERVOUS SYSTEM</StyledButton>
-                <StyledButton variant="contained" sx={{width:"20%"}}>NEUROIMAGING</StyledButton>
+                <StyledButton variant="contained" sx={{width:"15%"}}>NERVOUS SYSTEM</StyledButton>
+                <StyledButton variant="contained" sx={{width:"15%"}}>NEUROIMAGING</StyledButton>
             </Box>
-            <Box sx={{ flexGrow: 1,mx:14 }}>
+            <Box sx={{ flexGrow: 1,mx:30 }}>
                 <Grid container spacing={2} sx={{ height: '100%' }}>
                     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Card sx={{ flexGrow: 1 }}>
-                            <CardMedia sx={{ flexGrow: 1 }}>
-                                <StyledGif src={DocSpk} alt="Neurodesign GIF" />
+                            <CardMedia sx={{ flexGrow: 1 , height:"52vh" }}>
+                                <StyledGif src={DocGif} alt="Neurodesign GIF" />
                             </CardMedia>
                         </Card>
                     </Grid>
@@ -168,7 +168,7 @@ export default function Case() {
                     </Grid>
                 </Grid>
             </Box>
-            <Typography variant='h4' textAlign="center" my={2} mx={8}>Don't just take their word for it.</Typography>
+            <Typography variant='h4' textAlign="center" marginTop={10} mx={8}>Don't just take their word for it.</Typography>
             <Typography textAlign="center" mx={44} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
                 Ad Campaigns, and Brand Recognition</Typography>
             <Box sx={{ textAlign: 'center', my: 2}}>
