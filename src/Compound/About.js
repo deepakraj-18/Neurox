@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Box, Typography, Grid, Avatar } from '@mui/material';
+import React, { useState } from 'react';
+import { Container, Box, Typography, Grid, Avatar, Modal, Backdrop, Fade } from '@mui/material';
 import AboutImg from '../assest/About.png';
 import Barchart from '../assest/barchart.png';
 import Innovation from '../assest/Innovation.png';
@@ -8,9 +8,11 @@ import Comprehensive from '../assest/Comper.png';
 import Ethical from '../assest/Ethical.png';
 import { styled } from '@mui/material/styles';
 import Person from '../assest/Person.png';
+import Anoop from '../assest/Anoop.png';
 import LinkedInIcon from '../assest/linkedin.png';
 import FooterPage from './FooterPage';
 import NavbarTwo from './NavbarTwo';
+// import './styles.css'; // Ensure this is imported for the blur effect
 
 const boxData = [
     {
@@ -124,10 +126,51 @@ const TeamImage = styled('img')({
 });
 
 const About = () => {
+    const [open, setOpen] = useState(false);
+    const [selectedMember, setSelectedMember] = useState(null);
+
+    const handleOpen = (member) => {
+        setSelectedMember(member);
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+        setSelectedMember(null);
+    };
+
+    const modalStyle = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: '50%',
+        bgcolor: 'background.paper',
+        boxShadow: 24,
+        p: 4,
+        borderRadius: 2,
+    };
+    
+    const getDescriptionForMember = (member) => {
+        if (member.name === 'Mr. Anoop Antony') {
+            return `Driven by a passion for understanding the intricate workings of the human mind and behavior, our CEO and Founder brings a wealth of knowledge and expertise to NeuroX. With a solid educational background including a BSc in Psychology, MSc in Cognitive Neuroscience, and additional diplomas in neuromarketing and consumer neuroscience, he has dedicated years to unraveling the mysteries of the brain.
+            
+            He has honed his skills through diverse professional experiences, ranging from psychological therapies to neurodevelopmental and auditory practices. As a seasoned neurofeedback specialist and neuroscience researcher, they have delved deep into the realms of brain function and behavior, exploring innovative solutions for various neurological challenges.
+            
+            Fuelled by a vision to leverage neuroscience advancements for real-world applications, Mr. Antony founded NeuroX. At the helm of our consumer science lab, he leads a dynamic team of experts in harnessing the power of neuromarketing, artificial intelligence (AI), and brain-computer interface (BCI) technologies. Their enthusiasm for utilizing eye tracking and EEG research to enhance early detection and optimize solutions for social and neurodevelopmental disorders is at the heart of NeuroX's mission.
+            
+            With a relentless drive for innovation and a commitment to pushing the boundaries of neuroscience, Mr. Antony is dedicated to steering NeuroX towards pioneering advancements that shape the future of marketing, healthcare, and beyond.`;
+        }
+        
+        return "Description for other members.";
+    };
+    
+
+
     return (
         <>
-        <NavbarTwo/>
-            <Container maxWidth="md" sx={{my:18}}>
+            <NavbarTwo />
+            <Container maxWidth="md" sx={{ my: 18 }}>
                 <Box sx={{ textAlign: 'center', my: 4, mx: 8 }}>
                     <Typography variant="h2">
                         About our company <span style={{ color: '#07A3FC' }}> NeuroX </span>
@@ -191,7 +234,7 @@ const About = () => {
                 </StyledBox>
                 <Box sx={{ textAlign: "center" }} my={10}>
                     <Typography variant="h4">
-                        Meet out excellence team members
+                        Meet our excellent team members
                     </Typography>
                     <Typography variant="h6" my={4}>
                         With EventraScreen, elevate every occasion with innovative and dynamic screen interfaces crafted to captivate your audience.
@@ -199,12 +242,12 @@ const About = () => {
                 </Box>
                 <Grid container spacing={4}>
                     {teamMembers.map((member, index) => (
-                        <Grid item xs={12} sm={6} md={3} key={index}>
-                            <TeamMemberBox>
+                        <Grid item xs={12} sm={6} md={3} key={index} >
+                            <TeamMemberBox onClick={() => handleOpen(member)} sx={{padding:"6px"}}>
                                 <LinkedInAvatar alt="LinkedIn" src={LinkedInIcon} />
                                 <TeamImage src={member.image} alt={member.name} />
-                                <Typography variant="p" sx={{display:"flex",justifyContent:"left",alignItems:"flex-start"}}>{member.name}</Typography>
-                                <Typography variant="body1"  color="#07A3FC" sx={{display:"flex",justifyContent:"left",fontSize:"0.7rem"}}>{member.title}</Typography>
+                                <Typography variant="body1" sx={{ display: "flex", justifyContent: "left", alignItems: "flex-start" }}>{member.name}</Typography>
+                                <Typography variant="body2" color="#07A3FC" sx={{ display: "flex", justifyContent: "left", fontSize: "0.7rem" }}>{member.title}</Typography>
                             </TeamMemberBox>
                         </Grid>
                     ))}
@@ -216,8 +259,8 @@ const About = () => {
                     <Typography variant="h6" my={4}>
                         With EventraScreen, elevate every occasion with innovative and dynamic screen interfaces crafted to captivate your audience.
                     </Typography>
+                    <img src={Barchart} style={{ height: "400px", width: "100%" }} alt="Barchart" />
                 </Box>
-                <StyledImage src={Barchart} alt="Services" />
                 <Box sx={{ textAlign: "center" }} my={10}>
                     <Typography variant="h4">
                         Partnerships / Collaborations
@@ -228,8 +271,43 @@ const About = () => {
                 </Box>
             </Container>
             <FooterPage />
+
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                sx={{height:"100%",width:"100%"}}
+            >
+                <Fade in={open}>
+                    <Grid sx={modalStyle}>
+                        {selectedMember && (
+                            <Grid sx={{ display: 'flex' }}>
+                                <Avatar
+                                    alt={selectedMember.name}
+                                    src={selectedMember.image}
+                                    sx={{ width: 120, height: 120, marginRight: 4 }}
+                                />
+                                <Grid sx={{ display: 'flex', flexDirection: 'column' }}>
+                                    <Typography id="transition-modal-title" variant="h6" component="h2">
+                                        {selectedMember.name}
+                                    </Typography>
+                                    <Typography variant="body2" color="#07A3FC" sx={{ fontSize: "0.8rem" }}>
+                                        {selectedMember.title}
+                                    </Typography>
+                                    <Typography id="transition-modal-description" sx={{ mt: 2 ,fontSize:"12px"}}>
+                                        {getDescriptionForMember(selectedMember)}
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                        )}
+                    </Grid>
+                </Fade>
+            </Modal>
         </>
     );
 };
+
 
 export default About;
