@@ -855,13 +855,13 @@
   /* Add transition for font-size and color */
 }
 
-.Solution_page-text-2.animated {
-  font-size: 8rem;
+.Solution_page-text-2 {
+  font-size: 6rem;
   color: #07A3FC;
 }
 
-.Solution_page-text-2.animated:hover{
-  transition: 0.4s ease all;
+.Solution_page-text-2.animated{
+  transition: .2s ease all;
   font-size: 8rem;
   font-weight: bolder;
   color: #07A3FC;

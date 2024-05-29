@@ -107,7 +107,7 @@ const LinkedInAvatar = styled(Avatar)(({ theme }) => ({
 const TeamMemberBox = styled(Box)(({ theme }) => ({
     position: 'relative',
     textAlign: 'center',
-    padding: theme.spacing(2),
+    // padding: theme.spacing(2),
     border: '1px solid #ddd',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: '#fff',
@@ -203,8 +203,8 @@ const About = () => {
                             <TeamMemberBox>
                                 <LinkedInAvatar alt="LinkedIn" src={LinkedInIcon} />
                                 <TeamImage src={member.image} alt={member.name} />
-                                <Typography variant="h6">{member.name}</Typography>
-                                <Typography variant="body1" color="primary">{member.title}</Typography>
+                                <Typography variant="p" sx={{display:"flex",justifyContent:"left",alignItems:"flex-start"}}>{member.name}</Typography>
+                                <Typography variant="body1"  color="#07A3FC" sx={{display:"flex",justifyContent:"left",fontSize:"0.7rem"}}>{member.title}</Typography>
                             </TeamMemberBox>
                         </Grid>
                     ))}

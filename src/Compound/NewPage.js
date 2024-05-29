@@ -41,7 +41,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">02</div>
                 </div>
-                <div style={{ height: "max-height",  marginLeft: "30px" }} className='section-text'>
+                <div style={{ height: "max-height" }} className='section-text'>
                     <div class="section-text-2">FACIAL CODING</div>
                     <div className='section-text-3'>
                         Through the use of facial coding, one can identify and categorize emotions as well as their intensity by observing a person's facial expressions.
@@ -57,7 +57,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">03</div>
                 </div>
-                <div style={{ height: "max-height" , marginLeft: "30px" }} className='section-text'>
+                <div style={{ height: "max-height"  }} className='section-text'>
                     <div class="section-text-2">EYE TRACKING</div>
                     <div className='section-text-3'>
                         Eye tracking technology allows for the measurement and analysis of eye movements to gain insights into attention and cognitive processes.
