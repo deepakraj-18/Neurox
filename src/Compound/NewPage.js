@@ -41,7 +41,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">02</div>
                 </div>
-                <div style={{ height: "max-height", margin: "10px" }}>
+                <div style={{ height: "max-height",  marginLeft: "30px" }} className='section-text'>
                     <div class="section-text-2">FACIAL CODING</div>
                     <div className='section-text-3'>
                         Through the use of facial coding, one can identify and categorize emotions as well as their intensity by observing a person's facial expressions.
@@ -57,7 +57,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">03</div>
                 </div>
-                <div style={{ height: "max-height", margin: "10px" }}>
+                <div style={{ height: "max-height" , marginLeft: "30px" }} className='section-text'>
                     <div class="section-text-2">EYE TRACKING</div>
                     <div className='section-text-3'>
                         Eye tracking technology allows for the measurement and analysis of eye movements to gain insights into attention and cognitive processes.
@@ -72,7 +72,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">04</div>
                 </div>
-                <div style={{ height: "max-height", margin: "10px", marginLeft: "30px" }}>
+                <div style={{ height: "max-height", margin: "10px", marginLeft: "30px" , marginLeft: "30px" }} className='section-text'>
                     <div class="section-text-2">GSR</div>
                     <div className='section-text-3'>
                         The electrical conductance of the skin can be measured using the galvanic skin response (GSR), which is dependent on the skin's moisture content.
@@ -87,7 +87,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">05</div>
                 </div>
-                <div style={{ height: "max-height", margin: "10px", marginLeft: "30px"}}>
+                <div style={{ height: "max-height", margin: "10px", marginLeft: "30px" }} className='section-text'>
                     <div class="section-text-2">HRV</div>
                     <div className='section-text-3'>
                         Heart rate variability (HRV) testing measures heartbeat interval variations and is used to assess physiological and emotional responses to marketing stimuli like ads or product designs.
