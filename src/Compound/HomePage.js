@@ -49,7 +49,7 @@ const HomePage = () => {
               <div className="tab" onClick={() => navigate("/faq")}>FAQs</div>
               <div className="tab" onClick={() => navigate("/about")}>About Us</div>
               <div className="tab" onClick={() => navigate("/contact")}>Contact</div>
-              <div className="tab"><SearchIcon sx={{ color: "white" }} /></div>
+              <div className="tab" onClick={() => navigate("/search")}><SearchIcon sx={{ color: "white" }} /></div>
             </div>
           </div>
         </div>

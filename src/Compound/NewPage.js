@@ -24,7 +24,7 @@ const NewPage = () => {
                 <div class="section-box">
                     <div class="section-text-1">01</div>
                 </div>
-                <div style={{ height: "max-height", margin: "10px", marginLeft: "30px" }}>
+                <div style={{ height: "max-height", margin: "10px", marginLeft: "30px" }} className='section-text'>
                     <div class="section-text-2">EEG</div>
                     <div className='section-text-3'>
                         Electroencephalography, or EEG for short, is one of the most widely used methodologies used by neuromarketers today.

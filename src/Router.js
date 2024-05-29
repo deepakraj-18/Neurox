@@ -25,6 +25,7 @@ import Intro from './Compound/Intro'
 import Blog from './Compound/Blog/Blog'
 import Product from './Compound/Product'
 import CaseStudy from './Compound/Case/CaseStudy'
+import Search from './Compound/Search'
 
 
 
@@ -35,6 +36,7 @@ export default function Router() {
    <Routes>
     <Route path='/' element={<Intro/>}></Route>
     <Route path='/home' element={<LandingPage/>}></Route>
+    <Route path='/search' element={<Search/>}></Route>
 
     <Route path='/services' element={<Service/>}></Route>
     <Route path='/product' element={<Product/>}></Route>

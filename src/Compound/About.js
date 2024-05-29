@@ -222,7 +222,7 @@ const About = () => {
                     <Typography variant="h4">
                         Partnerships / Collaborations
                     </Typography>
-                    <Typography variant="h6" my={4}>
+                    <Typography variant="h6" my={4} fontFamily={"Arimo"}>
                         With EventraScreen, elevate every occasion with innovative and dynamic screen interfaces crafted to captivate your audience.
                     </Typography>
                 </Box>

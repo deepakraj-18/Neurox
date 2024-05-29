@@ -38,7 +38,7 @@ const NavbarTwo = () => {
               </div>
             ))}
           </NavLinks>
-          <IconButton edge="end" color="inherit" aria-label="search">
+          <IconButton edge="end" color="inherit" aria-label="search" onClick={() => navigate("/search")}>
             <SearchIcon />
           </IconButton>
         </ToolbarContainer>
