@@ -14,8 +14,8 @@ const Range = () => {
 
     return (
         <>
-        <div style={{margin:"-30px",marginTop:"150px",textAlign:"center"}}>
-            <div class="Design-con-1" data-aos="fade-right">Our range of <span style={{color: "#07a3fc",marginTop: "-2%"}}>Services</span>  </div>
+        <div style={{margin:"-30px",marginTop:"150px",width:"100%"}}>
+            <div class="Design-con-1" data-aos="fade-right" style={{textAlign:"center"}}>Our range of <span style={{color: "#07a3fc",marginTop: "-2%"}}>Services</span>  </div>
             <div class="Design_page_line aos-animate" data-aos="fade-left"></div>
             <div class="Design">
                 <div class="Design-content">
@@ -26,7 +26,7 @@ const Range = () => {
                                 visual systems work, offering valuable guidance for designers, marketers, and creatives
                                 to enhance user engagement and product appeal.</div>
                             <div class="Design-text-3 ">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <svg stroke="currentColor" fill="grey" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01zm20.368-642.368c-12.496 12.496-12.496 32.752 0 45.248l115.76 115.76H287.68c-17.68 0-32 14.336-32 32s14.32 32 32 32h362.464l-117.76 117.744c-12.496 12.496-12.496 32.752 0 45.248 6.256 6.256 14.432 9.376 22.624 9.376s16.368-3.12 22.624-9.376l189.008-194-189.008-194c-12.512-12.496-32.752-12.496-45.264 0z"></path></svg>
 
                                 <EastRoundedIcon className='icon'></EastRoundedIcon>

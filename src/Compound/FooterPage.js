@@ -9,6 +9,7 @@ import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MoreOver from '../data/black_arrow.png'
+import { useNavigate } from 'react-router-dom';
 
 
 const FooterPage = () => {
@@ -18,6 +19,7 @@ const FooterPage = () => {
             behavior: 'smooth'
         });
     };
+    const navigate = useNavigate();
     return (
         <div className='Footer_page'>
             <div className='Footer-container'>
@@ -40,11 +42,11 @@ const FooterPage = () => {
                         <div className='Footer-text-header'>
                             Navigation
                         </div>
-                        <div className='Footer-text-subheader'>Service</div>
-                        <div className='Footer-text-subheader'>Technology</div>
-                        <div className='Footer-text-subheader'>Case Study</div>
-                        <div className='Footer-text-subheader'>Resource</div>
-                        <div className='Footer-text-subheader'>Contact</div>
+                        <div className='Footer-text-subheader' onClick={() => navigate("/services")}>Service</div>
+                        <div className='Footer-text-subheader' onClick={() => navigate("/technology")}>Technology</div>
+                        <div className='Footer-text-subheader' onClick={() => navigate("/case")}>Case Study</div>
+                        <div className='Footer-text-subheader' onClick={() => navigate("/resource")}>Resource</div>
+                        <div className='Footer-text-subheader' onClick={() => navigate("/contact")}>Contact</div>
                     </div>
                     <div className='Footer-text-4'>
                         <div className='Footer-text-header'>

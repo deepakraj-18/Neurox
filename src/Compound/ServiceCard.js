@@ -36,6 +36,7 @@ const ImageContainer = styled(Box)({
     width: '140px',
     // borderRadius: '4px',
     visibility: 'hidden',
+    height:'100px'
   },
 });
 
@@ -43,10 +44,10 @@ const ServiceCard = ({ title, description, imageUrl, link }) => {
   const navigate = useNavigate();
   return (
     <StyledCard onClick={() => navigate(link)}>
-      <Grid container alignItems="center" sx={{ display: "flex" }}>
-        <Grid item xs={12} sx={{ display: "flex" }}>
-          <Box display="flex" alignItems="center" sx={{ width: "100%" }}>
-            <Box sx={{ width: "30%" }}>
+      <Grid container sx={{}}>
+        <Grid item xs={12} sx={{ }}>
+          <Box display="flex" alignItems="center"  gap={5} sx={{ width: "100%",height:"100px" }}>
+            <Box sx={{width:'20%' }}>
               <Typography variant="h4">{title}</Typography>
             </Box>
             <Box sx={{ flexGrow: 1, mx: 2, width: "30%" }}>

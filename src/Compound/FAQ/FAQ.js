@@ -92,11 +92,11 @@ const FAQ = () => {
       <StyledCard onClick={() => navigate(link)} className='faq-container'>
         <Grid container alignItems="center" sx={{ display: "flex" }}>
           <Grid item xs={12} sx={{ display: "flex" }}>
-            <Box alignItems="center" display="flex" sx={{ width: "100%",alignItems:"baseline" }}>
-              <Box alignItems="center" sx={{ width: "50%" }}>
+            <Box alignItems="center" display="flex" sx={{ width: "100%" }}>
+              <Box alignItems="center" sx={{ width: "50%", display:"flex" }}>
                 <Typography variant="p" sx={{ fontSize: "1rem", fontWeight: 400, width: "100%" }} className='faq-container-text'>{title}</Typography>
               </Box>
-              <Box alignItems="center" sx={{ width: "50%" }}>
+              <Box alignItems="center" sx={{ width: "50%",mt:2 }}>
                 <Typography variant="p" color="textSecondary" sx={{ textAlign: "right" }} className='faq-container-description'>
                   {description}
                 </Typography>
@@ -125,7 +125,7 @@ const FAQ = () => {
   return (
     <>
       <NavbarTwo />
-      <Container>
+      <Container fontFamily={"Arimo"}>
         <Box sx={{ textAlign: 'center', my: 20 }}>
           <Typography variant="h2" gutterBottom>
             FAQ
@@ -134,8 +134,8 @@ const FAQ = () => {
             Electroencephalography, or EEG for short, is one of the most widely used methodologies used by neuromarketers today.
           </Typography>
         </Box>
-        <Box sx={{ height: "50px", width: "600px", borderBottom:'1px solid black', mx: "auto",marginTop:'-40px' }}>
-          <SearchIcon sx={{ color: "black" }} />
+        <Box sx={{ height: "50px", width: "600px", mx: "auto",marginTop:'-40px',backgroundColor:"#D9D9D9",borderRadius:"25px",display:"flex",flexDirection:"row-reverse" }}>
+          <SearchIcon sx={{ color: "black",margin: "auto 10px auto 0px" }} />
           {/* <Typography>What are you looking for?</Typography> */}
           </Box>
         <Box sx={{ textAlign: 'center', my: 8 }}>
@@ -171,10 +171,10 @@ const FAQ = () => {
             </Accordion>
           ))}
         </Box> */}
-        <Typography variant='h4' textAlign="center" marginTop={10} mx={8}>Don't just take their word for it.</Typography>
-            <Typography textAlign="center" mx={26} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
+        <Typography variant='h4' textAlign="center" fontFamily={"Arimo"} marginTop={10} mx={8}>Don't just take their word for it.</Typography>
+            <Typography textAlign="center" mx={26} fontSize={20} fontFamily={"Arimo"}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
                 Ad Campaigns, and Brand Recognition</Typography>
-            <Box sx={{ textAlign: 'center', my: 2}}>
+            <Box sx={{ textAlign: 'center', mt: 2,mb:20}}>
                 <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
             </Box>
       </Container>

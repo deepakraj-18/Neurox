@@ -234,7 +234,7 @@
 
 .appearing-box {
   position: absolute;
-  top: 4px;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 10%;
@@ -860,7 +860,7 @@
   color: #07A3FC;
 }
 
-.Solution_page-text-2.animated{
+.Solution_page-text-2.animated {
   transition: .2s ease all;
   font-size: 8rem;
   font-weight: bolder;
@@ -1013,7 +1013,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left: 5%;
 }
 
 /* .Joinus_arrow {
@@ -1076,7 +1076,7 @@
   position: relative;
   margin-left: 10%;
   color: #9B9B9C;
-  /* font-size: large; */
+  font-size: 15px;
   max-width: 75%;
   bottom: 10%;
 }
@@ -1124,7 +1124,9 @@
   color: #9B9B9C;
   margin-top: 20px;
   max-width: 150%;
-  /* font-size: ; */
+  font-size: 15px;
+  cursor: pointer;
+
 }
 
 .MuiSvgIcon-root {
@@ -1231,7 +1233,7 @@
 
 .AboutUs-left-2 {
   position: relative;
-  top: 20%;
+  top: 45%;
   left: 5%;
   max-width: 90%;
   font-weight: bold;
@@ -1239,7 +1241,7 @@
 
 .AboutUs-left-3 {
   position: relative;
-  top: 30%;
+  top: 35%;
   left: 5%;
   max-width: 90%;
 }
@@ -1300,7 +1302,7 @@
 
 .Design-con-1 {
   font-size: 6vw;
-  left: 5%;
+  /* left: 5%; */
   position: relative;
 }
 
@@ -1424,8 +1426,8 @@ video {
   height: 100%;
   overflow: hidden;
   position: relative;
-  width: 100vw;
-  padding: 2% 0%;
+  /* width: 100vw; */
+  padding: 3% 0%;
 }
 
 .NewPage_text-1,
@@ -1476,10 +1478,10 @@ video {
   justify-content: space-between;
 }
 
-.section-text{
-  display:flex;
-  align-items:center;
-  gap:6%;
+.section-text {
+  display: flex;
+  align-items: center;
+  gap: 6%;
 }
 
 .section-text-2 {
@@ -1556,8 +1558,9 @@ video {
   border-color: #09a4fc;
   color: #09a4fc;
 }
+
 .NewPage_section .section-box {
- justify-content: center;
+  justify-content: center;
 }
 
 
@@ -1571,9 +1574,12 @@ video {
 }
 
 .NewPage_section .section-icon {
-  border: 2px solid #09a4fc;
+  border: 2px solid #000;
   border-radius: 50%;
+}
 
+.NewPage_section .section-icon .icon {
+  fill: #000;
 }
 
 .NewPage_section:hover .section-icon {
@@ -1586,6 +1592,7 @@ video {
 
 .NewPage_section:hover .icon {
   color: #fff;
+  fill: #fff;
 }
 
 
@@ -1624,9 +1631,11 @@ video {
 .faq-container {
   min-height: 50px;
 }
+
 .faq-container:hover .faq-container-text {
   color: #07A3FC;
 }
+
 .faq-container:hover .faq-container-text {
   color: #07A3FC;
 }
@@ -1639,7 +1648,7 @@ video {
 
 .faq-container:hover .faq-container-description {
   display: block;
- 
+
 }
 
 /* .faq-container .faq-container-closeIcon {
@@ -1658,7 +1667,7 @@ video {
   display: block;
   color: #000;
   border: 2px solid #000;
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .faq-container:hover .faq-container-openIcon {

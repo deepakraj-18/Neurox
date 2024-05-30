@@ -15,7 +15,7 @@ const AboutUs = () => {
     <div className='AboutUs'>
         <div className='AboutUs-contain' style={{margin:"4px"}}>
         <div className='AboutUs-left'>
-            <Typography className="AboutUs-left-1" data-aos="fade-right">_____________________________________</Typography>
+            {/* <Typography className="AboutUs-left-1" data-aos="fade-right">_____________________________________</Typography> */}
             <Typography className="AboutUs-left-2" data-aos="fade-right" sx={{fontSize:"34px"}}>
             <span style={{ color: '#07A3FC'}}>NeuroX</span> stands out in the market with its unique blend of neuroscience expertise, high-end technology, and tailored solutions that deliver actionable insights to clients.
         </Typography>
@@ -27,10 +27,10 @@ const AboutUs = () => {
           <video autoPlay loop muted className='AboutUs-right_video' data-aos="fade-left">
             <source src={Detail_video} type="video/mp4" className='AboutUs-right_video-1' />
           </video>
-          <p className="AboutUs-right-1">AN ANALYSIS OF NEURONS</p>
+          {/* <p className="AboutUs-right-1">AN ANALYSIS OF NEURONS</p> */}
           <div style={{marginTop:"80px"}}>
           <img src={MoreOver} alt="MoreOver" className="AboutUs-right_MoreOver" />
-        <Typography className="AboutUs-right-2" data-aos="fade-left">_____________________________________</Typography>
+        {/* <Typography className="AboutUs-right-2" data-aos="fade-left">_____________________________________</Typography> */}
         </div>
         </div>
         </div>

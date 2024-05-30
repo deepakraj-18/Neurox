@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import AppBar from '@mui/material/AppBar';
 // import Toolbar from '@mui/material/Toolbar';
 // import Button from '@mui/material/Button';
@@ -46,8 +46,8 @@ import FooterPage from '../FooterPage';
 
 const StyledVideo = styled('video')({
   width: '100%',
-  borderRadius: '40px',
-  height:'80vh'
+  borderRadius: '8px',
+  // height: '80vh'
 });
 
 const StyledMap = styled('img')({
@@ -138,25 +138,35 @@ const Service = () => {
   console.log(searchParams.get("query"));
   const classes = useStyles();
   const navigate = useNavigate();
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    });
+  };
+  useEffect(() => {
+    scrollToBottom();
+  }, [])
+
 
   return (
     <>
       <NavbarTwo />
       <Container>
-        <Box sx={{ textAlign: 'center', marginTop:"270px" }}>
-          <Typography variant="h2" gutterBottom fontFamily={"Arimo"}>
+        <Box sx={{ textAlign: 'center', marginTop: "200px" }}>
+          <Typography variant="h2" gutterBottom fontFamily={"Arimo"} mb={2}>
             Services
           </Typography>
-          <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "20px",my:6}}>
+          <Typography variant="body1" paragraph sx={{ color: "gray", fontSize: "20px", my: 6,mt:0 }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type
             specimen book. It has survived not only five centuries, but also
           </Typography>
         </Box>
-        <StyledVideo autoPlay loop muted sx={{borderRadius:"20px"}}>
-          <source src={servicesVideo} type="video/mp4" />
-          Your browser does not support the video tag.
+        <StyledVideo  src={servicesVideo} autoPlay loop muted sx={{  }}>
+          {/* <img src={} type="video/mp4" /> */}
+          {/* Your browser does not support the video tag. */}
         </StyledVideo>
       </Container>
       <Container>
@@ -193,11 +203,11 @@ const Service = () => {
       </div> */}
       {/* <PartnersPageTwo/> */}
       <Typography variant='h4' textAlign="center" my={2} mx={8}>Don't just take their word for it.</Typography>
-            <Typography textAlign="center" mx={44} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
-                Ad Campaigns, and Brand Recognition</Typography>
-            <Box sx={{ textAlign: 'center', my: 2}}>
-                <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
-            </Box>
+      <Typography textAlign="center" mx={44} fontSize={20}>Unleash the Potential of Your Brand: Let NeuroX Elevate Your Packaging,
+        Ad Campaigns, and Brand Recognition</Typography>
+      <Box sx={{ textAlign: 'center', mb: 20 }}>
+        <button style={{ backgroundColor: "#07A3FC", borderRadius: "30px", height: "40px", width: "180px", border: "1px solid #07A3FC", color: "white" }}>Our Work</button>
+      </Box>
       {/* <FooterContainer>
         <Container maxWidth="lg">
           <Grid container spacing={5}>
